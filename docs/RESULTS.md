@@ -290,7 +290,7 @@ p95 5.67). Это практически совпадает с `no_gnss_aiding` 
     Офлайн-воспроизведение идёт строго по времени записи, а executor rclpy берёт готовые подписки
     в своём порядке, и выход запускает то одна, то другая тележка.
   - Систематически на точность это не влияет. Против ближайшего эталона (±0.05 с) RMSE скорости
-    0.0327 у ROS и 0.0339 офлайн (`.work/compare_ros.py`).
+    0.0327 у ROS и 0.0339 офлайн (`tools/compare_ros.py`).
 - **Контрольный прогон 120 с** (`--duration 120`, предварительный образ): скорость 0.0226 м/с,
   3D 1.081 м, 3588 пар.
 
@@ -509,7 +509,7 @@ S2T хуже T2S. Больше всего разница в al_max: 13.1 про�
 ## 5. Абляции
 
 Каждая строка — `F4_final` (GNSS 10 с, 60 заездов) с одним изменением. Прогоны сделаны на
-текущем коде 27.09 (`.work/rerun_fix.sh`). Источник — `results/<прогон>/summary.json`. Во всех
+текущем коде 27.09 (`scripts/rerun_results.sh`). Источник — `results/<прогон>/summary.json`. Во всех
 ячейках медиана / среднее. «Лучше на k/60» — по `run_cv.py --compare F4_final <прогон>` для al_rmse.
 
 | прогон | изменение | al_rmse, м | e3d_mean, м | drift_pct, % | e2d_offmap, м | v_rmse, м/с | score_loss | вывод |
@@ -550,8 +550,9 @@ fix до 30 с. При окне 0.5 и 1 с сводные метрики сов
 поправки TRN не доходили до опубликованного положения. Тогда `F4_final` при GNSS 10 с показывал
 al_rmse 2.38 / 4.32 м. Медиана совпадала с `AF_trn_off`, и результат был хуже `AF_noaiding`.
 Теперь для таких пачек $\text{anchor\_delta} = s_{anchor} - s_{offset} - s_{odo}$, и результат —
-числа выше. Прежние файлы перезаписаны прогоном `.work/rerun_fix.sh`; прежние числа
-сохранены в `.work/NUMBERS_REFRESH.md` (таблица «было → стало»). На тестовом bag с пачками по всему маршруту (`final`, 1.11 м)
+числа выше. Прежние файлы перезаписаны прогоном `scripts/rerun_results.sh`; прежние числа
+(медиана / среднее, до → после): al_rmse 2.38 / 4.32 → 1.98 / 3.15 м, e3d 2.14 / 4.00 → 1.66 / 2.80 м,
+дрейф 0.064 / 0.171 → 0.047 / 0.127 %, score_loss 0.738 / 1.06 → 0.622 / 0.946. На тестовом bag с пачками по всему маршруту (`final`, 1.11 м)
 исправление ничего не изменило. Вариант только с окном старта стал 6.73 → 7.02 м и теперь близок
 к `no_gnss_aiding` (7.16 м).
 
@@ -762,7 +763,7 @@ $PY tools/checker_sim.py --gnss-start-only 35 --out results/checker_30618_88aea4
 $PY tools/run_cv.py --tag F4_final --bags all --antenna all --jobs 6
 $PY tools/run_cv.py --tag F4_final_burst --bags all --antenna all --gnss-limit 30 --gnss-burst 120 1.5 --jobs 6
 
-# 4. абляции (§5); полный список в .work/rerun_fix.sh
+# 4. абляции (§5); полный список в scripts/rerun_results.sh
 $PY tools/run_cv.py --tag AF_noloops  --set loops_enable=false
 $PY tools/run_cv.py --tag AF_noaiding --set gnss_aiding=false
 $PY tools/run_cv.py --tag AF_trn_off  --set trn_enable=false

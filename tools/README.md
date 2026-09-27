@@ -3,7 +3,7 @@
 Запуск из корня решения офлайн-интерпретатором Python (numpy, scipy, matplotlib, PyYAML):
 
     export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
-    PY=/opt/miniconda3/envs/ml/bin/python
+    PY=python3          # любой python 3.10+ с numpy, scipy, matplotlib, pyyaml
 
 Входные данные: разобранные bag `.work/cache/<bag>.pkl`, индекс `.work/bag_index.json`, карты
 `src/tram_backup_odometry/maps/{t2s,s2t}.json`. Сам датасет (`../dataset/data/<bag>/`) нужен
@@ -44,7 +44,7 @@ RTK-эталона). Текущие данные: 122 bag, 97 уникальны
 
 ## build_loops.py: геометрия разворотных петель (`maps/loops.json`)
 
-    OMP_NUM_THREADS=1 PYTHONPATH=src/tram_backup_odometry /opt/miniconda3/envs/ml/bin/python tools/build_loops.py
+    OMP_NUM_THREADS=1 PYTHONPATH=src/tram_backup_odometry $PY tools/build_loops.py
     $PY tools/build_loops.py --no-test-bag --no-plot      # без проверки на тестовом bag и без рисунка
 
 Каждый прогон начинается на конечной перед разворотной петлёй и заканчивается в петле другой

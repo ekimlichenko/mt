@@ -185,7 +185,7 @@ slop 0.05 с), скорость сравнивается с `twist.linear.x`, п
 - Числа F4 сняты после исправления 27.09 в `Pipeline._process_burst`: раньше пачка GNSS в
   стартовом окне (до запуска TRN) оставляла TRN-смещение якоря пустым, и TRN до конца
   рейса не корректировал выход. Тогда у F4_final было 2.38 / 4.32 м along-track и
-  2.14 / 4.00 м e3d (`.work/NUMBERS_REFRESH.md`). Подробности — [docs/RESULTS.md](docs/RESULTS.md) и
+  2.14 / 4.00 м e3d. Подробности — [docs/RESULTS.md](docs/RESULTS.md) и
   [docs/MODEL.md](docs/MODEL.md), §9.
 - При пачках GNSS ковариация местами занижена: среднее NEES 4.69, доля эталона внутри
   95 %-эллипса в среднем 0.93.

@@ -1696,7 +1696,7 @@ TRN. $\sigma_\delta$ здесь не умножается на `pose_trn_sigma_s
 | версия до разъяснений (без коррекции, колец, `base_link`, задержки) | 24.24 | 6.52 | 30.50 | 169.3 | 3.15 | 0 / 0 | 109.2 |
 
 Сквозной прогон в ROS 2 (Docker, реальное время, собственный чекер организаторов
-`hackathon_solution_checker`, итоговый образ `.work/build_final3.log`;
+`hackathon_solution_checker`, итоговый образ `results/docker_build.log`;
 `results/checker_ros_30618_88aea4d9_final/checker_final.txt`, разбор в `README.md` там же): скорость RMSE
 0.0324 м/с (max 0.302), 3D RMSE 1.111 м (max 14.02), z RMSE 0.037 м, 38 437 пар; офлайн-эмуляция на том же
 bag — 0.0335 м/с и 1.115 м (`results/checker_30618_88aea4d9/summary.json`, вариант final). Предварительный
@@ -2168,7 +2168,7 @@ GNSS-ключи: `pipe_gnss_bursts` / `pipe_gnss_rejected` — число при
 
 **Источник.** `results/<tag>/summary.json`, ключи `overall` и `by_direction`. Прогоняются 122 bag,
 оцениваются 60 (`eval_ok`), ошибок 0. Каждая абляция — `F4_final` с одним переключателем, точка главной
-антенны, окно GNSS 10 с. Команды — в `.work/rerun_fix.sh`:
+антенны, окно GNSS 10 с. Команды — в `scripts/rerun_results.sh`:
 
 ```
 python tools/run_cv.py --tag <tag> --jobs 6 --set <key>=<value>

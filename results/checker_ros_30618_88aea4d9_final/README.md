@@ -2,7 +2,7 @@
 
 Итоговый прогон: образ `tram_backup_odometry:humble` пересобран 27.09 после правки `pipeline.py`
 (anchor_delta при неактивном TRN) и смены умолчания `vehicle_id` в launch на 30618
-(`RUN_TESTS=1 scripts/build.sh`, `.work/build_final3.log`: offline colcon build + pytest в образе 120 passed, 11 skipped).
+(`RUN_TESTS=1 scripts/build.sh`, `results/docker_build.log`: offline colcon build + pytest в образе 120 passed, 11 skipped).
 Оценка — **собственный чекер организаторов** `hackathon_solution_checker`, собранный из их исходников;
 проигрывание в реальном времени (rate 1, полный bag, 1311 с). Во время прогона на хосте не запускались
 тяжёлые офлайн-расчёты (в отличие от предварительного прогона `results/checker_ros_30618_88aea4d9/`).

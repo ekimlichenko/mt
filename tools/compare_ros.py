@@ -1,13 +1,14 @@
 """Compare a run_checker.sh result bag with the offline pipeline and emulate the checker on it.
 
-python3 compare_ros.py <result_bag_dir> [t_limit_s]
+python3 tools/compare_ros.py <result_bag_dir> [t_limit_s]   (in the image; SOL = repository root)
 """
+import os
 import sys
+
 import numpy as np
 
-import os
-ROOT = os.environ.get('SOL', '/Users/egor/Documents/sideprojects/приколы/ХакатонМосТранспорт/solution')
-sys.path.insert(0, ROOT + '/tools')
+ROOT = os.environ.get('SOL', os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import checker_sim as cs  # noqa: E402  (patches bagio for Odometry)
 from tram_backup_odometry import bagio  # noqa: E402
 from tram_backup_odometry.core.config import Params  # noqa: E402

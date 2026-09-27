@@ -90,7 +90,7 @@ h = [0, 1, -(t_filter - t_b)], R = ``meas_sigma``^2; нет ни проверк�
 
 Использование
 -------------
-    PY=/opt/miniconda3/envs/ml/bin/python
+    PY=python3
     $PY tools/run_cv.py --tag B1_naive    --bags all --antenna master --jobs 4 --estimator baseline_naive:run_bag
     $PY tools/run_cv.py --tag B1_naive_kf --bags all --antenna master --jobs 4 --estimator baseline_naive:run_bag_kf
     $PY tools/run_cv.py --compare B1_naive F3_final

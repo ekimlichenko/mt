@@ -3,7 +3,7 @@
  "config": {
   "gnss_limit": 10.0,
   "seed": 0,
-  "plot_dir": "/Users/egor/Documents/sideprojects/приколы/ХакатонМосТранспорт/solution/docs/plots",
+  "plot_dir": "docs/plots",
   "command": "python tools/robustness.py --jobs 6",
   "jobs": 6,
   "post_s": 10.0,
@@ -25942,31 +25942,31 @@
  ],
  "figures": [
   [
-   "/Users/egor/Documents/sideprojects/приколы/ХакатонМосТранспорт/solution/docs/plots/robust_drop_both.png",
+   "docs/plots/robust_drop_both.png",
    "обе тележки молчат: 30 с в движении, 15 с при торможении, 15 с при торможении без команды; оценка против эталона и наивного удержания (ZOH); ниже — смещение вдоль пути относительно чистого прогона"
   ],
   [
-   "/Users/egor/Documents/sideprojects/приколы/ХакатонМосТранспорт/solution/docs/plots/robust_slip_injection.png",
+   "docs/plots/robust_slip_injection.png",
    "введённое боксование передней тележки, синфазное боксование обеих, юз передней и синфазный юз обеих при торможении; флаг slip"
   ],
   [
-   "/Users/egor/Documents/sideprojects/приколы/ХакатонМосТранспорт/solution/docs/plots/robust_single_bogie.png",
+   "docs/plots/robust_single_bogie.png",
    "отказы одной тележки: пропадание задней 60 с, нули задней 30 с, замерзание передней 30 с; состояние фузии"
   ],
   [
-   "/Users/egor/Documents/sideprojects/приколы/ХакатонМосТранспорт/solution/docs/plots/robust_stamp_jump.png",
+   "docs/plots/robust_stamp_jump.png",
    "сдвиг всех входных штампов на ±0.5 с на 5 с: штампы, скорость на выходе, ошибка"
   ],
   [
-   "/Users/egor/Documents/sideprojects/приколы/ХакатонМосТранспорт/solution/docs/plots/robust_real_slip.png",
+   "docs/plots/robust_real_slip.png",
    "реальные эпизоды проскальзывания/юза (без инъекции): сырые тележки, эталон, оценка, флаг"
   ],
   [
-   "/Users/egor/Documents/sideprojects/приколы/ХакатонМосТранспорт/solution/docs/plots/robust_overview.png",
+   "docs/plots/robust_overview.png",
    "сводка по сценариям: max |ошибка скорости| и |Δs| к концу отказа, оценка против наивной фузии"
   ],
   [
-   "/Users/egor/Documents/sideprojects/приколы/ХакатонМосТранспорт/solution/docs/plots/robust_adhesion_gains.png",
+   "docs/plots/robust_adhesion_gains.png",
    "распределение adhesion_used и диапазоны адаптивных коэффициентов тяги/тормоза по 60 заездам"
   ]
  ]

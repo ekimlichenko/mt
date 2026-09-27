@@ -22,7 +22,7 @@
 ```bash
 cd solution
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
-PY=/opt/miniconda3/envs/ml/bin/python          # любой python 3.10+ с numpy, scipy, pyyaml
+PY=python3          # любой python 3.10+ с numpy, scipy, pyyaml
 $PY tools/calibration/<script>.py --help         # у каждого скрипта есть docstring и --help
 ```
 

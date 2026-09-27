@@ -3222,7 +3222,7 @@
  "wall_s": 25.390451192855835,
  "config": {
   "tag": "G_limit3",
-  "out": "/Users/egor/Documents/sideprojects/\u043f\u0440\u0438\u043a\u043e\u043b\u044b/\u0425\u0430\u043a\u0430\u0442\u043e\u043d\u041c\u043e\u0441\u0422\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442/solution/results/G_limit3",
+  "out": "results/G_limit3",
   "params": null,
   "fold_params": null,
   "overrides": {},

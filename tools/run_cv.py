@@ -450,6 +450,7 @@ def main(argv=None):
             list(ex.map(process_bag, worst, [index['bags'][b] for b in worst], [cfg] * len(worst)))
     S['wall_s'] = time.time() - t0
     cfg_out = {k: (sorted(v) if isinstance(v, set) else v) for k, v in cfg.items()}
+    cfg_out['out'] = os.path.relpath(out, ev.ROOT)   # no machine-specific absolute paths in results
     with open(os.path.join(out, 'per_bag.json'), 'w') as f:
         json.dump(_jsonable(recs), f, indent=1)
     with open(os.path.join(out, 'summary.json'), 'w') as f:

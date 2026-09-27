@@ -57,7 +57,7 @@ the track centreline, docs/analysis_notes.md F3/F8):
    difference between loop arc distance to the joint and wheel distance.
 
     OMP_NUM_THREADS=1 PYTHONPATH=src/tram_backup_odometry \\
-        /opt/miniconda3/envs/ml/bin/python tools/build_loops.py [--no-test-bag] [--no-plot]
+        python3 tools/build_loops.py [--no-test-bag] [--no-plot]
 
 Runtime ~5 s (122 cached bags + the test bag).  Result:
 src/tram_backup_odometry/maps/loops.json and docs/plots/loops.png.

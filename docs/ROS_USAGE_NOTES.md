@@ -30,7 +30,7 @@ RUN_TESTS=1 ./scripts/build.sh     # ... + pytest пакета внутри об
   Humble (catkin_pkg 1.x) его отклоняет. Dockerfile и скрипты добавляют заглушку только в
   копии для сборки и только если тега нет; исходный файл не меняется. Так же
   `scripts/run_checker.sh` собирает пакет чекера `hackathon_solution_checker`.
-- Тесты в образе: `120 passed, 11 skipped` (`.work/build_final3.log`). Пропускается
+- Тесты в образе: `120 passed, 11 skipped` (`results/docker_build.log`). Пропускается
   `test_evaluate.py`: ему нужен scipy для `tools/evaluate.py`, а scipy не является
   зависимостью времени выполнения. На хосте без ROS: `106 passed, 12 skipped` (дополнительно
   пропускается `test_ros_node.py`: нет `rclpy`). В `test_ros_node.py` есть проверки, что по

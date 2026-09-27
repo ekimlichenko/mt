@@ -2329,6 +2329,20 @@ def findings(S):
 
 
 # ------------------------------------------------------------------ main
+
+def _relpaths(x):
+    """Replace absolute paths inside the repository by repo-relative ones (no machine-specific paths in results)."""
+    root = os.path.abspath(ev.ROOT) + os.sep
+    if isinstance(x, dict):
+        return {k: _relpaths(v) for k, v in x.items()}
+    if isinstance(x, list):
+        return [_relpaths(v) for v in x]
+    if isinstance(x, str) and x.startswith(root):
+        return x[len(root):]
+    if isinstance(x, str) and x == root[:-1]:
+        return '.'
+    return x
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--part', default='all',
@@ -2449,7 +2463,7 @@ def main(argv=None):
         except Exception:
             traceback.print_exc()
             S['figures_error'] = traceback.format_exc()
-    S = jsonable(S)
+    S = _relpaths(jsonable(S))
     with open(sum_path, 'w') as f:
         json.dump(S, f, indent=1, ensure_ascii=False)
     with open(per_path, 'w') as f:

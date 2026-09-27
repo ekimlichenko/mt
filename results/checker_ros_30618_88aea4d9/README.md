@@ -3,13 +3,13 @@
 Сквозная проверка итогового кода: наш узел в образе `tram_backup_odometry:humble`, оценка —
 **собственный чекер организаторов** `hackathon_solution_checker` (`ros2 run hackathon_solution_checker metrics`),
 собранный из их исходников. Проигрывание в реальном времени (rate 1), полный bag (1309 с).
-Образ собран 27.09 в 17:00 MSK (`.work/build_final2.log`), прогон 17:05–17:27 MSK — до правки
+Образ собран 27.09 в 17:00 MSK (предварительная сборка; её лог не сохранён, итоговая — `results/docker_build.log`), прогон 17:05–17:27 MSK — до правки
 `pipeline.py` (anchor_delta при неактивном TRN); офлайн-эмуляция после правки не изменилась (1.11 м).
 
 ## Команды
 
 ```bash
-RUN_TESTS=1 scripts/build.sh > .work/build_final2.log 2>&1
+RUN_TESTS=1 scripts/build.sh
 scripts/run_checker.sh ../check_code/check-code/bags/30618_88aea4d9 results/checker_ros_30618_88aea4d9 --measure
 ```
 
@@ -78,9 +78,9 @@ scripts/run_checker.sh ../check_code/check-code/bags/30618_88aea4d9 results/chec
   поэтому триггером выхода становится то одна, то другая тележка. На точность это не влияет систематически:
   по ближайшему эталону (±0.05 с) RMSE скорости ROS 0.0327 против 0.0339 офлайн.
 
-Сравнение выполнено скриптом `.work/compare_ros.py` (запуск в образе: он импортирует `tools/checker_sim.py`).
+Сравнение выполнено скриптом `tools/compare_ros.py` (запуск в образе: он импортирует `tools/checker_sim.py`).
 
-## Сборка и тесты (`.work/build_final2.log`, EXIT=0)
+## Сборка и тесты (предварительная сборка, EXIT=0)
 
 - `docker build` образа `tram_backup_odometry:humble`: 2 пакета собраны (tram_vehicle_msgs, tram_backup_odometry);
   `config/params.yaml` при регенерации не изменился.
@@ -88,4 +88,4 @@ scripts/run_checker.sh ../check_code/check-code/bags/30618_88aea4d9 results/chec
   `import OK`, maps/config/launch установлены.
 - pytest пакета в образе (`--network none`): **119 passed, 11 skipped**.
 
-Контрольный прогон 120 с (`--duration 120`, `.work/checker_smoke120/`): velocity RMSE 0.0226, 3D 1.081, n 3588.
+Контрольный прогон 120 с (`--duration 120`, результаты не сохранены): velocity RMSE 0.0226, 3D 1.081, n 3588.

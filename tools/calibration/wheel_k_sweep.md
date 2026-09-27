@@ -21,7 +21,7 @@
 
 ```bash
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
-PY=/opt/miniconda3/envs/ml/bin/python
+PY=python3   # любой python 3.10+ с numpy, scipy, pyyaml
 
 # вариант 1: одной командой (таблица, разбивка по дням и leave-one-day-out)
 $PY tools/calibration/cv_sweep.py --param wheel_k_30639 \
