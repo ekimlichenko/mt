@@ -1,0 +1,21 @@
+<ССЫЛКА_НА_РЕПОЗИТОРИЙ>/tree/main/src
+
+Два пакета ROS 2 Humble в src/, код на Python (rclpy):
+• tram_backup_odometry — ament_python (rclpy, numpy): нода backup_odometry, launch, карты, параметры.
+• tram_vehicle_msgs — ament_cmake, побайтная копия пакета сообщений из датасета (в его package.xml нет <maintainer>, заглушка добавляется в копию для сборки, docs/JURY_GUIDE.md §2–3).
+
+Сборка стандартным colcon build без интернета (проверено в Docker, --network none); зависимости ros-humble-ros-base, python3-numpy, python3-yaml. Запуск:
+  ros2 launch tram_backup_odometry backup_odometry.launch.py vehicle_id:=30618
+
+Подписки (best effort, KEEP_LAST 50, совместимо с ros2 bag play):
+– /vehicle/front_bogie_velocity, /vehicle/rear_bogie_velocity — tram_vehicle_msgs/VelocitySensor, км/ч;
+– /vehicle/driver_position_cmd — tram_vehicle_msgs/DriverControllerCommand;
+– /sensing/gnss/master/fix, /sensing/gnss/rover/fix — sensor_msgs/NavSatFix, только для положения.
+
+Публикации (reliable, volatile, KEEP_LAST 50):
+– /result/velocity — tram_vehicle_msgs/VelocitySensor, velocity в м/с, frame_id base_link;
+– /result/position — nav_msgs/Odometry, frame_id map, child_frame_id base_link, с ковариацией; twist.linear.x в м/с.
+header.stamp выхода — побитовая копия stamp входа. Один выход на каждый новый stamp входа, 29.38 Гц на тестовом bag организаторов.
+Диагностика: /backup_odometry/diagnostics (1 Гц), /backup_odometry/slip.
+
+Инструкция для жюри: <ССЫЛКА_НА_РЕПОЗИТОРИЙ>/blob/main/docs/JURY_GUIDE.md

@@ -1,0 +1,42 @@
+<ССЫЛКА_НА_РЕПОЗИТОРИЙ>/blob/main/docs/JURY_GUIDE.md
+
+Краткая версия (в docs/JURY_GUIDE.md: §0 все команды, §4 запуск и лог, §5 топики, §6 замеры, §7 чекер). Команды выполняются из корня решения; рядом с ним лежат датасет (../dataset/data/<bag>/) и чекер организаторов (../check_code/check-code/, тестовый bag в bags/30618_88aea4d9).
+
+1) СБОРКА
+  ./scripts/build.sh
+Docker-образ tram_backup_odometry:humble и проверка colcon build с нуля без сети (--network none); с RUN_TESTS=1 ещё pytest в образе (120 passed, 11 skipped). Нативно в ROS 2 Humble: скопировать src/tram_vehicle_msgs и src/tram_backup_odometry в workspace, добавить заглушку <maintainer> в копию package.xml tram_vehicle_msgs (команда в §3), затем colcon build и source install/setup.bash.
+
+2) ВОСПРОИЗВЕДЕНИЕ ROSBAG
+Вручную: сначала нода, затем bag во втором терминале (<dataset> — каталог датасета; в Docker то же в контейнере образа, §4.2).
+  ros2 launch tram_backup_odometry backup_odometry.launch.py vehicle_id:=30618
+  ros2 bag play <dataset>/data/30618_0e41eac3
+vehicle_id выбирает калибровку колёс: 30618 — умолчание и вагон скрытой проверки, для bag вагона 30639 — vehicle_id:=30639.
+Скриптами в Docker (нужен образ из шага 1):
+  ./scripts/run_bag.sh ../dataset/data/30618_0e41eac3 /tmp/run_0e41eac3 --duration 120
+  cat /tmp/run_0e41eac3/check.txt
+Результат: result_bag/, node.log, play.log, record.log и check.txt (stamp выходов против stamp входов, частота, frame_id, дубли).
+  ./scripts/run_checker.sh ../check_code/check-code/bags/30618_88aea4d9 /tmp/chk_88aea4d9 --measure
+  cat /tmp/chk_88aea4d9/checker_final.txt
+Собирает чекер организаторов hackathon_solution_checker из их исходников, запускает ноду и чекер и проигрывает тестовый bag в реальном времени (около 22 мин; короткий вариант --duration 120).
+
+3) ВЫХОДНЫЕ ТОПИКИ
+• /result/velocity — tram_vehicle_msgs/VelocitySensor, поле velocity, м/с, frame_id base_link.
+• /result/position — nav_msgs/Odometry, frame_id map (система pathgraph, как у эталона /localization/kinematic_state), child_frame_id base_link.
+Один выход на каждый уникальный header.stamp входа, около 30 Гц на топик (29.38 Гц в итоговом прогоне). stamp выхода — побитовая копия header.stamp входа, вызвавшего публикацию. QoS reliable, глубина 50.
+В Odometry: position — точка base_link на пути (9.873 м впереди master-антенны, z = z pathgraph); orientation — рыскание по касательной пути; pose.covariance из σ_along, σ_cross, σ_yaw (СКО вдоль пути, поперёк и по курсу); twist.twist.linear.x — та же скорость, что в /result/velocity. Скорость — оценка на момент stamp − 0.09 с (output_velocity_delay_s), положение — на сам stamp. GNSS корректирует только положение, скорость считается по тележкам, контроллеру и карте.
+• /backup_odometry/diagnostics — DiagnosticArray, 1 Гц: OK/WARN/ERROR, mode, velocity_mps, sigma_along_m, время callback, счётчики.
+• /backup_odometry/slip — Bool (latched), флаг боксования или юза.
+
+4) ЛОГИ И МЕТРИКИ
+Лог ноды: строка ready: (vehicle_id, масштаб колёс k, output_frame), затем first pose:, а при Ctrl+C сводка shutdown: число входов и выходов, callback mean/p50/p95/p99/max, ошибки, нечисловые выходы. В итоговом прогоне callback mean 0.693 мс, max 6.32 мс, ошибок 0.
+  ros2 topic echo /backup_odometry/diagnostics --field status
+Отчёт чекера: checker_final.txt (и .json), периодические отчёты раз в 5 с в checker.log. Ожидаемо (results/checker_ros_30618_88aea4d9_final/): скорость RMSE 0.0324 м/с, 3D RMSE 1.111 м, 38 437 пар.
+Офлайн без ROS (Python с numpy, scipy, matplotlib, PyYAML): эмуляция чекера за секунды (вариант final — 3D RMSE 1.11 м) и оценка по всем bag датасета против GNSS-эталона (results/check/summary.md):
+  OMP_NUM_THREADS=1 PYTHONPATH=src/tram_backup_odometry python tools/checker_sim.py --gnss-start-only 35 --out /tmp/chk_sim
+  python tools/build_cache.py && python tools/bag_index.py
+  python tools/run_cv.py --tag check --bags all --antenna all --jobs 8
+
+5) ЗАДЕРЖКА, ЧАСТОТА, РЕСУРСЫ
+  ./scripts/measure.sh ../dataset/data/30618_0e41eac3 /tmp/measure_0e41eac3
+(run_bag.sh --measure на первых 120 с; тот же ключ --measure у run_checker.sh). latency.txt — задержка от прихода входа до выхода с тем же stamp, p50/p95/p99/max, частота; resources.txt — CPU и RSS (резидентная память) ноды. Вручную: ros2 topic hz /result/velocity (и /result/position).
+Итог под чекером (весь bag, реальное время, после первых 2 с): задержка до /result/velocity p50/p95/p99/max 1.17/2.45/3.03/22.8 мс, до /result/position 1.90/3.23/3.78/24.9 мс; со стартовой пачкой bag max 32.1 и 32.4 мс (ТЗ: ≤ 100 мс). CPU 0.071 ядра, RSS 62.2 → 64.1 МиБ без роста.
