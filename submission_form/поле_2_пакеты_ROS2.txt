@@ -1,4 +1,4 @@
-<ССЫЛКА_НА_РЕПОЗИТОРИЙ>/tree/main/src
+https://github.com/ekimlichenko/mt/tree/main/src
 
 Два пакета ROS 2 Humble в src/, код на Python (rclpy):
 • tram_backup_odometry — ament_python (rclpy, numpy): нода backup_odometry, launch, карты, параметры.
@@ -18,4 +18,4 @@
 header.stamp выхода — побитовая копия stamp входа. Один выход на каждый новый stamp входа, 29.38 Гц на тестовом bag организаторов.
 Диагностика: /backup_odometry/diagnostics (1 Гц), /backup_odometry/slip.
 
-Инструкция для жюри: <ССЫЛКА_НА_РЕПОЗИТОРИЙ>/blob/main/docs/JURY_GUIDE.md
+Инструкция для жюри: https://github.com/ekimlichenko/mt/blob/main/docs/JURY_GUIDE.md

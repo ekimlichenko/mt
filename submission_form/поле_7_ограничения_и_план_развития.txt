@@ -59,4 +59,4 @@ P2 — архитектура:
 4) Автоопределение вагона по базе антенн.
 5) Больше независимых эталонов, отдельная выборка для колец, замеры на целевом железе.
 
-Подробно: docs/LIMITATIONS_ROADMAP.md (<ССЫЛКА_НА_РЕПОЗИТОРИЙ>/blob/main/docs/LIMITATIONS_ROADMAP.md).
+Подробно: docs/LIMITATIONS_ROADMAP.md (https://github.com/ekimlichenko/mt/blob/main/docs/LIMITATIONS_ROADMAP.md).

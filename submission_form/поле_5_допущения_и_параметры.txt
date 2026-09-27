@@ -39,7 +39,7 @@ B. КОНФИГУРИРУЕМЫЕ ПАРАМЕТРЫ
 • Остальное — частичным yaml (только изменяемые параметры) или через --ros-args -p:
   ros2 launch tram_backup_odometry backup_odometry.launch.py params_file:=my_params.yaml
   ros2 run tram_backup_odometry backup_odometry_node --ros-args -p vehicle_id:=30618 -p gnss_aiding:=false
-• Полный список (единицы, смысл, происхождение) — docs/PARAMETERS.md §5: <ССЫЛКА_НА_РЕПОЗИТОРИЙ>/blob/main/docs/PARAMETERS.md
+• Полный список (единицы, смысл, происхождение) — docs/PARAMETERS.md §5: https://github.com/ekimlichenko/mt/blob/main/docs/PARAMETERS.md
 
 1) Начальная позиция
 • Вручную не задаётся: выставка по GNSS в окне init_window_s = 3 с после первого фикса (не меньше init_min_fixes = 5), таймаут init_timeout_s = 10 с.

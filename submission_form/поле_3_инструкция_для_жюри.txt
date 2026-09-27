@@ -1,4 +1,4 @@
-<ССЫЛКА_НА_РЕПОЗИТОРИЙ>/blob/main/docs/JURY_GUIDE.md
+https://github.com/ekimlichenko/mt/blob/main/docs/JURY_GUIDE.md
 
 Краткая версия (в docs/JURY_GUIDE.md: §0 все команды, §4 запуск и лог, §5 топики, §6 замеры, §7 чекер). Команды выполняются из корня решения; рядом с ним лежат датасет (../dataset/data/<bag>/) и чекер организаторов (../check_code/check-code/, тестовый bag в bags/30618_88aea4d9).
 
