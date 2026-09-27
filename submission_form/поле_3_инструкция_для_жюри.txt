@@ -32,9 +32,9 @@ vehicle_id выбирает калибровку колёс: 30618 — умол�
   ros2 topic echo /backup_odometry/diagnostics --field status
 Отчёт чекера: checker_final.txt (и .json), периодические отчёты раз в 5 с в checker.log. Ожидаемо (results/checker_ros_30618_88aea4d9_final/): скорость RMSE 0.0324 м/с, 3D RMSE 1.111 м, 38 437 пар.
 Офлайн без ROS (Python с numpy, scipy, matplotlib, PyYAML): эмуляция чекера за секунды (вариант final — 3D RMSE 1.11 м) и оценка по всем bag датасета против GNSS-эталона (results/check/summary.md):
-  OMP_NUM_THREADS=1 PYTHONPATH=src/tram_backup_odometry python tools/checker_sim.py --gnss-start-only 35 --out /tmp/chk_sim
-  python tools/build_cache.py && python tools/bag_index.py
-  python tools/run_cv.py --tag check --bags all --antenna all --jobs 8
+  OMP_NUM_THREADS=1 PYTHONPATH=src/tram_backup_odometry python3 tools/checker_sim.py --variants final
+  python3 tools/build_cache.py && python3 tools/bag_index.py
+  python3 tools/run_cv.py --tag check --bags all --antenna all
 
 5) ЗАДЕРЖКА, ЧАСТОТА, РЕСУРСЫ
   ./scripts/measure.sh ../dataset/data/30618_0e41eac3 /tmp/measure_0e41eac3
