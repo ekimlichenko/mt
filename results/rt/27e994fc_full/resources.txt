@@ -1,0 +1,3 @@
+resource_monitor: pid 27, 3783 samples over 1904.1 s (host has 10 CPUs)
+  CPU cores mean 0.053 p50 0.059 p95 0.080 max 0.295 | busy-only (3772 samples) mean 0.053 p95 0.080
+  CPU time 100.00 s | RSS MiB start 61.8 mean 63.6 max 63.7 | threads 11

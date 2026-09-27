@@ -1,0 +1,8 @@
+checker final summary: shutdown report (printed after SIGINT); 263 periodic reports before
+  velocity velocity RMSE   0.032376  max   0.302344  n 38437
+  raw: [INFO] [1790520823.793829335] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.032376, max=0.302344, n=38437
+  position x        RMSE   0.904084  max  11.022944  n 38437
+  position y        RMSE   0.645218  max   8.669486  n 38437
+  position z        RMSE   0.037349  max   0.288202  n 38437
+  position distance RMSE   1.111336  max  14.023990  n 38437
+  raw: [INFO] [1790520823.794329127] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.904084, max=11.022944, n=38437, y: RMSE=0.645218, max=8.669486, n=38437, z: RMSE=0.037349, max=0.288202, n=38437, distance: RMSE=1.111336, max=14.023990, n=38437

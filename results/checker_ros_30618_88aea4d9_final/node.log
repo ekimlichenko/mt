@@ -1,0 +1,9 @@
+[INFO] [launch]: All log files can be found below /tmp/roslog/2026-09-27-14-31-45-520460-c1989195114a-51
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [backup_odometry_node-1]: process started with pid [55]
+[backup_odometry_node-1] [0m[INFO] [1790519505.676178586] [backup_odometry]: ready: vehicle_id='30618' k=3.5970 output_frame=map (frame_id=map) publish_on=all maps=/ws/install/tram_backup_odometry/share/tram_backup_odometry/maps (pipeline init 0.01 s); waiting for inputs[0m
+[backup_odometry_node-1] [0m[INFO] [1790519510.878792005] [backup_odometry]: first pose: map (103634.04, 86057.61, 165.18) yaw 1.569, mode init_provisional:single_front[0m
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [backup_odometry_node-1]: sending signal 'SIGINT' to process[backup_odometry_node-1]
+[backup_odometry_node-1] [backup_odometry] shutdown: inputs front=12216 rear=12225 cmd=26249 fix master=438 rover=435 | outputs velocity=38476 position=38473 | callback mean 0.693 ms p50 0.668 p95 1.585 p99 1.995 max 6.320 ms | errors 0, stamp fallbacks 0, non-finite outputs dropped 0
+[INFO] [backup_odometry_node-1]: process has finished cleanly [pid 55]

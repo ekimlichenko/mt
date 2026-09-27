@@ -1,0 +1,31 @@
+bag: /Users/egor/Documents/sideprojects/приколы/ХакатонМосТранспорт/dataset/data/30618_0e41eac3
+out: /Users/egor/Documents/sideprojects/приколы/ХакатонМосТранспорт/solution/results/rt/0e41eac3_120s_final   image: tram_backup_odometry:humble   vehicle: 30618   rate: 1.0   dev: 0   measure: 1
+node: ros2 launch tram_backup_odometry backup_odometry.launch.py use_sim_time:=false vehicle_id:=30618
+play: ros2 bag play /data/bag --disable-keyboard-controls -d 1 -r 1.0 (stopped after 120 s)
+played for 120154 ms
+[3]-  Done                    python3 "$TOOLS/resource_monitor.py" --csv /out/resources.csv --json /out/resources.json > /out/resources.txt 2>&1 < /dev/null
+[4]+  Done                    python3 "$TOOLS/latency_probe.py" --json /out/latency.json --csv /out/latency.csv > /out/latency.txt 2>&1 < /dev/null
+[2]+  Done                    ros2 bag record -o /out/result_bag /result/velocity /result/position /backup_odometry/diagnostics /backup_odometry/slip > /out/record.log 2>&1 < /dev/null
+[1]+  Done                    ros2 launch tram_backup_odometry backup_odometry.launch.py "${LAUNCH_ARGS[@]}" > /out/node.log 2>&1 < /dev/null
+node> [backup_odometry_node-1] [0m[INFO] [1790445442.350106884] [backup_odometry]: first pose: map (103632.17, 86047.84, 168.40) yaw -2.177, mode init_provisional:single_front[0m
+node> [backup_odometry_node-1] [0m[INFO] [1790445443.061881509] [backup_odometry]: initial alignment done (30 master / 35 rover fixes); GNSS subscriptions destroyed, running on wheels + controller only[0m
+node> [backup_odometry_node-1] [backup_odometry] shutdown: inputs front=1195 rear=1208 cmd=2437 fix master=30 rover=35 | outputs velocity=3645 position=3642 | callback mean 0.534 ms p50 0.596 p95 1.059 p99 1.496 max 5.482 ms | errors 0, stamp fallbacks 0, non-finite outputs dropped 0
+[INFO] [1790445563.438809051] [rosbag2_storage]: Opened database '/data/bag/30618_0e41eac3_0.db3' for READ_ONLY.
+[INFO] [1790445564.004447718] [rosbag2_storage]: Opened database '/out/result_bag/result_bag_0.db3' for READ_ONLY.
+check: 51308 input messages in the bag
+  /result/velocity   n=3645 stamps==input 3645/3645 (100.00%) | stamp rate 29.87 Hz over 122.0 s | 0.1s-grid coverage 100.00% | frame_id ['base_link'] | duplicate stamps 0 | stamp decreases 1177
+  /result/position   n=3642 stamps==input 3642/3642 (100.00%) | stamp rate 29.87 Hz over 121.9 s | 0.1s-grid coverage 100.00% | frame_id ['map'] child_frame_id ['base_link'] | duplicate stamps 0 | stamp decreases 1176
+  /backup_odometry/diagnostics n=125
+  last diagnostics: level 1 "no input for 1.7 s" mode=nav:both init_done=True cb_p50_ms=nan cb_max_ms_total=5.482
+latency_probe: 4842 input messages
+  /result/velocity n=3645 matched=3645 unmatched=0 duplicate-stamps=0 | rate wall 30.79 Hz, stamp 29.87 Hz | 0.1s-grid coverage 100.00% | frame_id base_link
+      latency ms, all:          p50 0.76 p95 1.52 p99 41.44 max 61.55
+      latency ms, after 2 s:   p50 0.74 p95 1.22 p99 1.73 max 5.52 (n=3480)
+      vs first input w/ stamp:  p50 0.82 p95 1.61 max 61.55
+  /result/position n=3642 matched=3642 unmatched=0 duplicate-stamps=0 | rate wall 30.76 Hz, stamp 29.87 Hz | 0.1s-grid coverage 100.00% | frame_id map
+      latency ms, all:          p50 1.43 p95 2.35 p99 41.62 max 61.66
+      latency ms, after 2 s:   p50 1.41 p95 2.08 p99 2.73 max 7.17 (n=3480)
+      vs first input w/ stamp:  p50 1.51 p95 2.46 max 61.66
+resource_monitor: pid 27, 248 samples over 124.7 s (host has 10 CPUs)
+  CPU cores mean 0.060 p50 0.060 p95 0.080 max 0.259 | busy-only (238 samples) mean 0.063 p95 0.080
+  CPU time 7.52 s | RSS MiB start 62.0 mean 63.3 max 63.4 | threads 11

@@ -1,0 +1,432 @@
+== regenerate config/params.yaml from the Params dataclass (ros:humble python, no network)
+wrote /sol/src/tram_backup_odometry/config/params.yaml (199 parameters, round-trip OK)
+== docker build -> tram_backup_odometry:humble (context: src/ tools/ docker/ only)
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load remote build context
+#1 DONE 0.0s
+
+#2 copy /context /
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/ros:humble
+#3 DONE 0.1s
+
+#4 [1/8] FROM docker.io/library/ros:humble@sha256:1813d3c85d7f96ff7d3012d865204583255740182db5d0065f8f8cd029a83138
+#4 resolve docker.io/library/ros:humble@sha256:1813d3c85d7f96ff7d3012d865204583255740182db5d0065f8f8cd029a83138 done
+#4 DONE 0.0s
+
+#5 [2/8] RUN apt-get update  && apt-get install -y --no-install-recommends         python3-numpy python3-yaml python3-pytest python3-psutil         ros-humble-rosbag2-storage-default-plugins  && rm -rf /var/lib/apt/lists/*
+#5 CACHED
+
+#6 [3/8] WORKDIR /ws
+#6 CACHED
+
+#7 [4/8] COPY src /ws/src
+#7 DONE 0.0s
+
+#8 [5/8] RUN for f in /ws/src/*/package.xml; do         grep -q '<maintainer' "$f" || sed -i 's|</license>|</license>\n  <maintainer email="noreply@example.com">unknown</maintainer>|' "$f";     done
+#8 DONE 0.1s
+
+#9 [6/8] RUN source /opt/ros/humble/setup.bash  && colcon build --event-handlers console_cohesion+  && rm -rf /ws/build /ws/log
+#9 0.250 Starting >>> tram_vehicle_msgs
+#9 1.551 --- output: tram_vehicle_msgs
+#9 1.551 -- The C compiler identification is GNU 11.4.0
+#9 1.551 -- The CXX compiler identification is GNU 11.4.0
+#9 1.551 -- Detecting C compiler ABI info
+#9 1.551 -- Detecting C compiler ABI info - done
+#9 1.551 -- Check for working C compiler: /usr/bin/cc - skipped
+#9 1.551 -- Detecting C compile features
+#9 1.551 -- Detecting C compile features - done
+#9 1.551 -- Detecting CXX compiler ABI info
+#9 1.551 -- Detecting CXX compiler ABI info - done
+#9 1.551 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+#9 1.551 -- Detecting CXX compile features
+#9 1.551 -- Detecting CXX compile features - done
+#9 1.551 -- Found std_msgs: 4.9.2 (/opt/ros/humble/share/std_msgs/cmake)
+#9 1.551 -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+#9 1.551 -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+#9 1.551 -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+#9 1.551 -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+#9 1.551 -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+#9 1.551 -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+#9 1.551 -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+#9 1.551 -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+#9 1.551 -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+#9 1.551 -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+#9 1.551 -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+#9 1.551 -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+#9 1.551 -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+#9 1.551 -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+#9 1.551 -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+#9 1.551 -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+#9 1.551 -- Found PythonExtra: .so  
+#9 1.551 -- Configuring done
+#9 1.551 -- Generating done
+#9 1.551 -- Build files have been written to: /ws/build/tram_vehicle_msgs
+#9 1.551 [  2%] Generating C code for ROS interfaces
+#9 1.551 [  5%] Generating C++ code for ROS interfaces
+#9 1.551 [  7%] Generating Rust code for ROS interfaces
+#9 1.551 [  7%] Built target ament_cmake_python_copy_tram_vehicle_msgs
+#9 1.551 running egg_info
+#9 1.551 creating tram_vehicle_msgs.egg-info
+#9 1.551 writing tram_vehicle_msgs.egg-info/PKG-INFO
+#9 1.551 writing dependency_links to tram_vehicle_msgs.egg-info/dependency_links.txt
+#9 1.551 writing top-level names to tram_vehicle_msgs.egg-info/top_level.txt
+#9 1.551 writing manifest file 'tram_vehicle_msgs.egg-info/SOURCES.txt'
+#9 1.551 reading manifest file 'tram_vehicle_msgs.egg-info/SOURCES.txt'
+#9 1.551 writing manifest file 'tram_vehicle_msgs.egg-info/SOURCES.txt'
+#9 1.551 [  7%] Built target ament_cmake_python_build_tram_vehicle_msgs_egg
+#9 1.551 [  7%] Built target tram_vehicle_msgs__rs
+#9 1.551 [  7%] Built target tram_vehicle_msgs__cpp
+#9 1.551 [ 10%] Generating C++ introspection for ROS interfaces
+#9 1.551 [ 12%] Generating C++ type support dispatch for ROS interfaces
+#9 1.551 [ 15%] Generating C++ type support for eProsima Fast-RTPS
+#9 1.551 [ 17%] Building C object CMakeFiles/tram_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/tram_vehicle_msgs/msg/detail/velocity_sensor__functions.c.o
+#9 1.551 [ 20%] Building C object CMakeFiles/tram_vehicle_msgs__rosidl_generator_c.dir/rosidl_generator_c/tram_vehicle_msgs/msg/detail/driver_controller_command__functions.c.o
+#9 1.551 [ 22%] Linking C shared library libtram_vehicle_msgs__rosidl_generator_c.so
+#9 1.551 [ 22%] Built target tram_vehicle_msgs__rosidl_generator_c
+#9 1.551 [ 25%] Generating C type support for eProsima Fast-RTPS
+#9 1.551 [ 27%] Generating C introspection for ROS interfaces
+#9 1.551 [ 30%] Generating C type support dispatch for ROS interfaces
+#9 1.551 [ 35%] Building CXX object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tram_vehicle_msgs/msg/driver_controller_command__type_support.cpp.o
+#9 1.551 [ 35%] Building CXX object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tram_vehicle_msgs/msg/velocity_sensor__type_support.cpp.o
+#9 1.551 [ 37%] Building CXX object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tram_vehicle_msgs/msg/detail/velocity_sensor__type_support.cpp.o
+#9 1.551 [ 40%] Building CXX object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tram_vehicle_msgs/msg/detail/driver_controller_command__type_support.cpp.o
+#9 1.551 [ 45%] Building CXX object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tram_vehicle_msgs/msg/detail/dds_fastrtps/driver_controller_command__type_support.cpp.o
+#9 1.551 [ 45%] Building CXX object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tram_vehicle_msgs/msg/detail/dds_fastrtps/velocity_sensor__type_support.cpp.o
+#9 1.551 [ 50%] Building C object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tram_vehicle_msgs/msg/detail/driver_controller_command__type_support.c.o
+#9 1.551 [ 50%] Building C object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tram_vehicle_msgs/msg/detail/velocity_sensor__type_support.c.o
+#9 1.551 [ 52%] Building CXX object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tram_vehicle_msgs/msg/velocity_sensor__type_support.cpp.o
+#9 1.551 [ 55%] Building CXX object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tram_vehicle_msgs/msg/driver_controller_command__type_support.cpp.o
+#9 1.551 [ 57%] Linking C shared library libtram_vehicle_msgs__rosidl_typesupport_introspection_c.so
+#9 1.551 [ 60%] Building CXX object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tram_vehicle_msgs/msg/detail/velocity_sensor__type_support_c.cpp.o
+#9 1.551 [ 62%] Building CXX object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tram_vehicle_msgs/msg/detail/driver_controller_command__type_support_c.cpp.o
+#9 1.551 [ 65%] Linking CXX shared library libtram_vehicle_msgs__rosidl_typesupport_c.so
+#9 1.551 [ 62%] Built target tram_vehicle_msgs__rosidl_typesupport_introspection_c
+#9 1.551 [ 65%] Built target tram_vehicle_msgs__rosidl_typesupport_c
+#9 1.551 [ 67%] Linking CXX shared library libtram_vehicle_msgs__rosidl_typesupport_cpp.so
+#9 1.551 [ 67%] Built target tram_vehicle_msgs__rosidl_typesupport_cpp
+#9 1.551 [ 70%] Linking CXX shared library libtram_vehicle_msgs__rosidl_typesupport_introspection_cpp.so
+#9 1.551 [ 72%] Linking CXX shared library libtram_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.so
+#9 1.551 [ 72%] Built target tram_vehicle_msgs__rosidl_typesupport_introspection_cpp
+#9 1.551 [ 75%] Linking CXX shared library libtram_vehicle_msgs__rosidl_typesupport_fastrtps_c.so
+#9 1.551 [ 75%] Built target tram_vehicle_msgs__rosidl_typesupport_fastrtps_cpp
+#9 1.551 [ 75%] Built target tram_vehicle_msgs__rosidl_typesupport_fastrtps_c
+#9 1.551 [ 75%] Built target tram_vehicle_msgs
+#9 1.551 [ 77%] Generating Python code for ROS interfaces
+#9 1.551 [ 77%] Built target tram_vehicle_msgs__py
+#9 1.551 [ 80%] Building C object CMakeFiles/tram_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/tram_vehicle_msgs/msg/_velocity_sensor_s.c.o
+#9 1.551 [ 82%] Building C object CMakeFiles/tram_vehicle_msgs__rosidl_generator_py.dir/rosidl_generator_py/tram_vehicle_msgs/msg/_driver_controller_command_s.c.o
+#9 1.551 [ 85%] Linking C shared library rosidl_generator_py/tram_vehicle_msgs/libtram_vehicle_msgs__rosidl_generator_py.so
+#9 1.551 [ 85%] Built target tram_vehicle_msgs__rosidl_generator_py
+#9 1.551 [ 87%] Building C object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tram_vehicle_msgs/_tram_vehicle_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o
+#9 1.551 [ 90%] Building C object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tram_vehicle_msgs/_tram_vehicle_msgs_s.ep.rosidl_typesupport_introspection_c.c.o
+#9 1.551 [ 92%] Building C object CMakeFiles/tram_vehicle_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tram_vehicle_msgs/_tram_vehicle_msgs_s.ep.rosidl_typesupport_c.c.o
+#9 1.551 [100%] Linking C shared library rosidl_generator_py/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+#9 1.551 [100%] Linking C shared library rosidl_generator_py/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+#9 1.551 [100%] Linking C shared library rosidl_generator_py/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+#9 1.551 [100%] Built target tram_vehicle_msgs__rosidl_typesupport_c__pyext
+#9 1.551 [100%] Built target tram_vehicle_msgs__rosidl_typesupport_introspection_c__pyext
+#9 1.551 [100%] Built target tram_vehicle_msgs__rosidl_typesupport_fastrtps_c__pyext
+#9 1.551 -- Install configuration: ""
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/ament_index/resource_index/rosidl_interfaces/tram_vehicle_msgs
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/driver_controller_command.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/rosidl_generator_c__visibility_control.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/velocity_sensor.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__functions.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__functions.c
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__type_support.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__type_support.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__struct.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__functions.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__struct.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__functions.c
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/library_path.sh
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/library_path.dsv
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_generator_c.so
+#9 1.551 -- Set runtime path of "/ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_generator_c.so" to ""
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__rosidl_typesupport_fastrtps_c.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__rosidl_typesupport_fastrtps_c.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_fastrtps_c.so
+#9 1.551 -- Set runtime path of "/ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/velocity_sensor.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/driver_controller_command.hpp
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__type_support.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__type_support.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__traits.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__traits.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__struct.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__builder.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__struct.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__builder.hpp
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__rosidl_typesupport_fastrtps_cpp.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/dds_fastrtps
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__rosidl_typesupport_fastrtps_cpp.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.so
+#9 1.551 -- Set runtime path of "/ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__rosidl_typesupport_introspection_c.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__rosidl_typesupport_introspection_c.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__type_support.c
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__type_support.c
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_introspection_c.so
+#9 1.551 -- Set runtime path of "/ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_introspection_c.so" to ""
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_c.so
+#9 1.551 -- Set runtime path of "/ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_c.so" to ""
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg
+#9 1.551 -- Up-to-date: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__type_support.cpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/velocity_sensor__rosidl_typesupport_introspection_cpp.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__rosidl_typesupport_introspection_cpp.hpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/include/tram_vehicle_msgs/tram_vehicle_msgs/msg/detail/driver_controller_command__type_support.cpp
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_introspection_cpp.so
+#9 1.551 -- Set runtime path of "/ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_cpp.so
+#9 1.551 -- Set runtime path of "/ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_typesupport_cpp.so" to ""
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/pythonpath.sh
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/pythonpath.dsv
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs-0.0.0-py3.10.egg-info
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs-0.0.0-py3.10.egg-info/top_level.txt
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/_velocity_sensor_s.c
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/__init__.py
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/_driver_controller_command.py
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/_driver_controller_command_s.c
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/_velocity_sensor.py
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/__init__.py
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/_tram_vehicle_msgs_s.ep.rosidl_typesupport_c.c
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/_tram_vehicle_msgs_s.ep.rosidl_typesupport_introspection_c.c
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/_tram_vehicle_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/libtram_vehicle_msgs__rosidl_generator_py.so
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+#9 1.551 Listing '/ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs'...
+#9 1.551 Compiling '/ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/__init__.py'...
+#9 1.551 Listing '/ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg'...
+#9 1.551 Compiling '/ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/__init__.py'...
+#9 1.551 Compiling '/ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/_driver_controller_command.py'...
+#9 1.551 Compiling '/ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/msg/_velocity_sensor.py'...
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+#9 1.551 -- Set runtime path of "/ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+#9 1.551 -- Set runtime path of "/ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+#9 1.551 -- Set runtime path of "/ws/install/tram_vehicle_msgs/local/lib/python3.10/dist-packages/tram_vehicle_msgs/tram_vehicle_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_generator_py.so
+#9 1.551 -- Set runtime path of "/ws/install/tram_vehicle_msgs/lib/libtram_vehicle_msgs__rosidl_generator_py.so" to ""
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/ament_index/resource_index/rust_packages/tram_vehicle_msgs
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/build.rs
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/src
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/src/msg
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/src/msg/rmw.rs
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/src/lib.rs
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/src/msg.rs
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/rust/Cargo.toml
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/msg/VelocitySensor.idl
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/msg/DriverControllerCommand.idl
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/msg/VelocitySensor.msg
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/msg/DriverControllerCommand.msg
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/ament_index/resource_index/package_run_dependencies/tram_vehicle_msgs
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/ament_index/resource_index/parent_prefix_path/tram_vehicle_msgs
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/ament_prefix_path.sh
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/ament_prefix_path.dsv
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/path.sh
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/environment/path.dsv
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/local_setup.bash
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/local_setup.sh
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/local_setup.zsh
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/local_setup.dsv
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/package.dsv
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/ament_index/resource_index/packages/tram_vehicle_msgs
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_generator_cExport.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_generator_cExport-noconfig.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_generator_cppExport.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_introspection_cExport.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_cExport.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_cExport-noconfig.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_introspection_cppExport.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_cppExport.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_generator_pyExport.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/export_tram_vehicle_msgs__rosidl_generator_pyExport-noconfig.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/rosidl_cmake-extras.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/ament_cmake_export_targets-extras.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgsConfig.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/cmake/tram_vehicle_msgsConfig-version.cmake
+#9 1.551 -- Installing: /ws/install/tram_vehicle_msgs/share/tram_vehicle_msgs/package.xml
+#9 1.551 ---
+#9 1.551 Finished <<< tram_vehicle_msgs [1.30s]
+#9 1.551 Starting >>> tram_backup_odometry
+#9 1.778 --- output: tram_backup_odometry
+#9 1.778 running egg_info
+#9 1.778 creating ../../build/tram_backup_odometry/tram_backup_odometry.egg-info
+#9 1.778 writing ../../build/tram_backup_odometry/tram_backup_odometry.egg-info/PKG-INFO
+#9 1.778 writing dependency_links to ../../build/tram_backup_odometry/tram_backup_odometry.egg-info/dependency_links.txt
+#9 1.778 writing entry points to ../../build/tram_backup_odometry/tram_backup_odometry.egg-info/entry_points.txt
+#9 1.778 writing requirements to ../../build/tram_backup_odometry/tram_backup_odometry.egg-info/requires.txt
+#9 1.778 writing top-level names to ../../build/tram_backup_odometry/tram_backup_odometry.egg-info/top_level.txt
+#9 1.778 writing manifest file '../../build/tram_backup_odometry/tram_backup_odometry.egg-info/SOURCES.txt'
+#9 1.778 reading manifest file '../../build/tram_backup_odometry/tram_backup_odometry.egg-info/SOURCES.txt'
+#9 1.778 writing manifest file '../../build/tram_backup_odometry/tram_backup_odometry.egg-info/SOURCES.txt'
+#9 1.778 running build
+#9 1.778 running build_py
+#9 1.778 creating /ws/build/tram_backup_odometry/build
+#9 1.778 creating /ws/build/tram_backup_odometry/build/lib
+#9 1.778 creating /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry
+#9 1.778 copying tram_backup_odometry/__init__.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry
+#9 1.778 copying tram_backup_odometry/replay.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry
+#9 1.778 copying tram_backup_odometry/bagio.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry
+#9 1.778 copying tram_backup_odometry/node.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry
+#9 1.778 creating /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 copying tram_backup_odometry/core/preprocess.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 copying tram_backup_odometry/core/traction.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 copying tram_backup_odometry/core/initializer.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 copying tram_backup_odometry/core/__init__.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 copying tram_backup_odometry/core/grade_matcher.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 copying tram_backup_odometry/core/track_map.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 copying tram_backup_odometry/core/frames.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 copying tram_backup_odometry/core/estimator.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 copying tram_backup_odometry/core/pipeline.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 copying tram_backup_odometry/core/wheel_fusion.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 copying tram_backup_odometry/core/config.py -> /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core
+#9 1.778 running install
+#9 1.778 running install_lib
+#9 1.778 creating /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/__init__.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry
+#9 1.778 creating /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core/preprocess.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core/traction.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core/initializer.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core/__init__.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core/grade_matcher.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core/track_map.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core/frames.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core/estimator.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core/pipeline.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core/wheel_fusion.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/core/config.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/replay.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/bagio.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry
+#9 1.778 copying /ws/build/tram_backup_odometry/build/lib/tram_backup_odometry/node.py -> /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/__init__.py to __init__.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core/preprocess.py to preprocess.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core/traction.py to traction.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core/initializer.py to initializer.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core/__init__.py to __init__.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core/grade_matcher.py to grade_matcher.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core/track_map.py to track_map.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core/frames.py to frames.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core/estimator.py to estimator.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core/pipeline.py to pipeline.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core/wheel_fusion.py to wheel_fusion.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/core/config.py to config.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/replay.py to replay.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/bagio.py to bagio.cpython-310.pyc
+#9 1.778 byte-compiling /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry/node.py to node.cpython-310.pyc
+#9 1.778 running install_data
+#9 1.778 creating /ws/install/tram_backup_odometry/share/ament_index
+#9 1.778 creating /ws/install/tram_backup_odometry/share/ament_index/resource_index
+#9 1.778 creating /ws/install/tram_backup_odometry/share/ament_index/resource_index/packages
+#9 1.778 copying resource/tram_backup_odometry -> /ws/install/tram_backup_odometry/share/ament_index/resource_index/packages
+#9 1.778 copying package.xml -> /ws/install/tram_backup_odometry/share/tram_backup_odometry
+#9 1.778 creating /ws/install/tram_backup_odometry/share/tram_backup_odometry/maps
+#9 1.778 copying maps/t2s.json -> /ws/install/tram_backup_odometry/share/tram_backup_odometry/maps
+#9 1.778 copying maps/s2t.json -> /ws/install/tram_backup_odometry/share/tram_backup_odometry/maps
+#9 1.778 copying maps/loops.json -> /ws/install/tram_backup_odometry/share/tram_backup_odometry/maps
+#9 1.778 creating /ws/install/tram_backup_odometry/share/tram_backup_odometry/config
+#9 1.778 copying config/params.yaml -> /ws/install/tram_backup_odometry/share/tram_backup_odometry/config
+#9 1.778 creating /ws/install/tram_backup_odometry/share/tram_backup_odometry/launch
+#9 1.778 copying launch/backup_odometry.launch.py -> /ws/install/tram_backup_odometry/share/tram_backup_odometry/launch
+#9 1.778 running install_egg_info
+#9 1.778 Copying ../../build/tram_backup_odometry/tram_backup_odometry.egg-info to /ws/install/tram_backup_odometry/lib/python3.10/site-packages/tram_backup_odometry-1.0.0-py3.10.egg-info
+#9 1.778 running install_scripts
+#9 1.778 Installing backup_odometry_node script to /ws/install/tram_backup_odometry/lib/tram_backup_odometry
+#9 1.778 Installing replay script to /ws/install/tram_backup_odometry/lib/tram_backup_odometry
+#9 1.778 writing list of installed files to '/ws/build/tram_backup_odometry/install.log'
+#9 1.778 ---
+#9 1.778 Finished <<< tram_backup_odometry [0.23s]
+#9 1.782 
+#9 1.782 Summary: 2 packages finished [1.58s]
+#9 DONE 1.8s
+
+#10 [7/8] COPY tools /ws/tools
+#10 DONE 0.0s
+
+#11 [8/8] RUN printf '%s\n' '#!/bin/bash' 'set -e'         'source "/opt/ros/$ROS_DISTRO/setup.bash" --'         'source /ws/install/setup.bash --'         'exec "$@"' > /ros_entrypoint.sh  && chmod +x /ros_entrypoint.sh  && echo 'source /ws/install/setup.bash' >> /root/.bashrc
+#11 DONE 0.1s
+
+#12 exporting to image
+#12 exporting layers 0.1s done
+#12 exporting manifest sha256:4e06fdb97daf525c5f1a755a6073f626ecad802856652b992f045d2a5899f103 done
+#12 exporting config sha256:46fd5c57ebc8a6911cd38de0793b61b85d3852eb1a2736ec346862d4548b179e done
+#12 exporting attestation manifest sha256:1bf06d4714b72b41805361a881c5b3688899ab1fb8228a37434059cd9a45ee43 done
+#12 exporting manifest list sha256:9034ef765db9ac3ff91c2bd7bba3c1e0ae2426e3c4a5d1ec790d63838ca04999 done
+#12 naming to docker.io/library/tram_backup_odometry:humble done
+#12 unpacking to docker.io/library/tram_backup_odometry:humble 0.0s done
+#12 DONE 0.2s
+== offline check: clean colcon build of the mounted sources with --network none
+network: unreachable as intended (gaierror)
+Starting >>> tram_vehicle_msgs
+Finished <<< tram_vehicle_msgs [1.24s]
+Starting >>> tram_backup_odometry
+Finished <<< tram_backup_odometry [0.23s]
+
+Summary: 2 packages finished [1.52s]
+package prefix: /tmp/ws/install/tram_backup_odometry
+executables:
+tram_backup_odometry backup_odometry_node
+tram_backup_odometry replay
+import OK
+/tmp/ws/install/tram_backup_odometry/share/tram_backup_odometry/config:
+params.yaml
+
+/tmp/ws/install/tram_backup_odometry/share/tram_backup_odometry/launch:
+backup_odometry.launch.py
+
+/tmp/ws/install/tram_backup_odometry/share/tram_backup_odometry/maps:
+loops.json
+s2t.json
+t2s.json
+== package tests inside the image (network none)
+....................sssssssssss......................................... [ 54%]
+...........................................................              [100%]
+120 passed, 11 skipped in 3.77s
+== done: image tram_backup_odometry:humble

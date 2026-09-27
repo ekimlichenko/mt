@@ -1,0 +1,12 @@
+{
+ "tag": "F4_final",
+ "t2s_bag": "30618_b8044aa0",
+ "s2t_bag": "30618_437e855c",
+ "speed_bag": "30618_b8044aa0",
+ "cov_bag": "30618_437e855c",
+ "figures": {
+  "per_bag": {
+   "file": "docs/plots/F4_final/per_bag.png"
+  }
+ }
+}

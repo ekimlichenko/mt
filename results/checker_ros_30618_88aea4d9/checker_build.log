@@ -1,0 +1,50 @@
+Starting >>> hackathon_solution_checker
+--- output: hackathon_solution_checker
+running egg_info
+creating ../../build/hackathon_solution_checker/hackathon_solution_checker.egg-info
+writing ../../build/hackathon_solution_checker/hackathon_solution_checker.egg-info/PKG-INFO
+writing dependency_links to ../../build/hackathon_solution_checker/hackathon_solution_checker.egg-info/dependency_links.txt
+writing entry points to ../../build/hackathon_solution_checker/hackathon_solution_checker.egg-info/entry_points.txt
+writing requirements to ../../build/hackathon_solution_checker/hackathon_solution_checker.egg-info/requires.txt
+writing top-level names to ../../build/hackathon_solution_checker/hackathon_solution_checker.egg-info/top_level.txt
+writing manifest file '../../build/hackathon_solution_checker/hackathon_solution_checker.egg-info/SOURCES.txt'
+reading manifest file '../../build/hackathon_solution_checker/hackathon_solution_checker.egg-info/SOURCES.txt'
+writing manifest file '../../build/hackathon_solution_checker/hackathon_solution_checker.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /tmp/chk/build/hackathon_solution_checker/build
+creating /tmp/chk/build/hackathon_solution_checker/build/lib
+creating /tmp/chk/build/hackathon_solution_checker/build/lib/hackathon_solution_checker
+copying hackathon_solution_checker/__init__.py -> /tmp/chk/build/hackathon_solution_checker/build/lib/hackathon_solution_checker
+copying hackathon_solution_checker/metrics.py -> /tmp/chk/build/hackathon_solution_checker/build/lib/hackathon_solution_checker
+warning: build_py: byte-compiling is disabled, skipping.
+
+running install
+running install_lib
+creating /tmp/chk/install/hackathon_solution_checker/lib/python3.10/site-packages/hackathon_solution_checker
+copying /tmp/chk/build/hackathon_solution_checker/build/lib/hackathon_solution_checker/__init__.py -> /tmp/chk/install/hackathon_solution_checker/lib/python3.10/site-packages/hackathon_solution_checker
+copying /tmp/chk/build/hackathon_solution_checker/build/lib/hackathon_solution_checker/metrics.py -> /tmp/chk/install/hackathon_solution_checker/lib/python3.10/site-packages/hackathon_solution_checker
+running install_data
+creating /tmp/chk/install/hackathon_solution_checker/share/ament_index
+warning: install_lib: byte-compiling is disabled, skipping.
+
+creating /tmp/chk/install/hackathon_solution_checker/share/ament_index/resource_index
+creating /tmp/chk/install/hackathon_solution_checker/share/ament_index/resource_index/packages
+copying resource/hackathon_solution_checker -> /tmp/chk/install/hackathon_solution_checker/share/ament_index/resource_index/packages
+copying package.xml -> /tmp/chk/install/hackathon_solution_checker/share/hackathon_solution_checker
+running install_egg_info
+Copying ../../build/hackathon_solution_checker/hackathon_solution_checker.egg-info to /tmp/chk/install/hackathon_solution_checker/lib/python3.10/site-packages/hackathon_solution_checker-0.1.0-py3.10.egg-info
+running install_scripts
+Installing metrics script to /tmp/chk/install/hackathon_solution_checker/lib/hackathon_solution_checker
+writing list of installed files to '/tmp/chk/build/hackathon_solution_checker/install.log'
+---
+--- stderr: hackathon_solution_checker
+warning: build_py: byte-compiling is disabled, skipping.
+
+warning: install_lib: byte-compiling is disabled, skipping.
+
+---
+Finished <<< hackathon_solution_checker [0.43s]
+
+Summary: 1 package finished [0.53s]
+  1 package had stderr output: hackathon_solution_checker

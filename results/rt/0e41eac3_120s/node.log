@@ -1,0 +1,10 @@
+[INFO] [launch]: All log files can be found below /tmp/roslog/2026-09-26-15-47-16-236797-43400c291a30-23
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [backup_odometry_node-1]: process started with pid [27]
+[backup_odometry_node-1] [0m[INFO] [1790437636.398841591] [backup_odometry]: ready: vehicle_id='30618' k=3.5970 output_frame=map (frame_id=map) publish_on=all maps=/ws/install/tram_backup_odometry/share/tram_backup_odometry/maps (pipeline init 0.01 s); waiting for inputs[0m
+[backup_odometry_node-1] [0m[INFO] [1790437641.404794135] [backup_odometry]: first pose: map (103632.17, 86047.84, 168.40) yaw -2.177, mode init_provisional:single_front[0m
+[backup_odometry_node-1] [0m[INFO] [1790437642.107781761] [backup_odometry]: initial alignment done (30 master / 35 rover fixes); GNSS subscriptions destroyed, running on wheels + controller only[0m
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [backup_odometry_node-1]: sending signal 'SIGINT' to process[backup_odometry_node-1]
+[backup_odometry_node-1] [backup_odometry] shutdown: inputs front=1195 rear=1208 cmd=2439 fix master=30 rover=35 | outputs velocity=3672 position=3669 | callback mean 0.583 ms p50 0.668 p95 1.000 p99 1.334 max 5.672 ms | errors 0, stamp fallbacks 0, non-finite outputs dropped 0
+[INFO] [backup_odometry_node-1]: process has finished cleanly [pid 27]

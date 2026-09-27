@@ -1,0 +1,32 @@
+{
+ "pid": 27,
+ "cmdline": "/usr/bin/python3 /ws/install/tram_backup_odometry/lib/tram_backup_odometry/backup_odometry_node --ros-args --log-level info --ros-args -r __node:=backup_odometry --params-file /ws/install/tram_backup_odometry/share/tram_backup_odometry/config/params.yaml --params-file /tmp/launch_params_rtr369ov",
+ "host_cpus": 10,
+ "samples": 3781,
+ "interval_s": 0.5,
+ "wall_s": 1903.5980907419998,
+ "cpu_s_total": 84.61000000000001,
+ "cpu_cores": {
+  "n": 3781,
+  "mean": 0.04444813514257402,
+  "p50": 0.039841040860567396,
+  "p95": 0.07954703262754004,
+  "max": 0.25911245330388377
+ },
+ "cpu_cores_busy_only": {
+  "n": 3771,
+  "mean": 0.04456600344048592,
+  "p50": 0.03984191056590543,
+  "p95": 0.0795507933159617,
+  "max": 0.25911245330388377
+ },
+ "rss_mib": {
+  "n": 3781,
+  "mean": 63.71421354304417,
+  "p50": 63.765625,
+  "p95": 63.765625,
+  "max": 63.765625,
+  "start": 62.08984375
+ },
+ "threads_max": 11
+}

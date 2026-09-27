@@ -1,0 +1,5 @@
+check: 73866 input messages in the bag
+  /result/velocity   n=55952 stamps==input 55952/55952 (100.00%) | stamp rate 29.45 Hz over 1900.2 s | 0.1s-grid coverage 100.00% | frame_id ['base_link'] | duplicate stamps 4 | stamp decreases 14753
+  /result/position   n=55949 stamps==input 55949/55949 (100.00%) | stamp rate 29.44 Hz over 1900.1 s | 0.1s-grid coverage 100.00% | frame_id ['map'] child_frame_id ['base_link'] | duplicate stamps 3 | stamp decreases 14752
+  /backup_odometry/diagnostics n=1904
+  last diagnostics: level 1 "no input for 1.6 s" mode=nav_trn:both init_done=True cb_p50_ms=nan cb_max_ms_total=14.890

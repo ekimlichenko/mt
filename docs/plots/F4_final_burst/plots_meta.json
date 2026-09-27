@@ -1,0 +1,12 @@
+{
+ "tag": "F4_final_burst",
+ "t2s_bag": "30618_33bec73f",
+ "s2t_bag": "30618_095a115b",
+ "speed_bag": "30618_33bec73f",
+ "cov_bag": "30618_095a115b",
+ "figures": {
+  "per_bag": {
+   "file": "docs/plots/F4_final_burst/per_bag.png"
+  }
+ }
+}

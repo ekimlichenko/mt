@@ -1,0 +1,531 @@
+[INFO] [1790517916.019435503] [hackathon_solution_checker]: Comparing /localization/kinematic_state with velocity=/result/velocity and position=/result/position (sync tolerance 0.050 s)
+[INFO] [1790517921.010304214] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=nan, max=0.000000, n=0
+[INFO] [1790517921.010789631] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=nan, max=0.000000, n=0, y: RMSE=nan, max=0.000000, n=0, z: RMSE=nan, max=0.000000, n=0, distance: RMSE=nan, max=0.000000, n=0
+[INFO] [1790517926.013145216] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.000000, max=0.000000, n=211
+[INFO] [1790517926.013603008] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.072803, max=0.088542, n=211, y: RMSE=1.003929, max=1.433158, n=211, z: RMSE=0.018464, max=0.022576, n=211, distance: RMSE=1.006735, max=1.436067, n=211
+[INFO] [1790517931.014777885] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.000000, max=0.000000, n=361
+[INFO] [1790517931.015547885] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.081616, max=0.094856, n=361, y: RMSE=1.244822, max=1.573579, n=361, z: RMSE=0.020598, max=0.023690, n=361, distance: RMSE=1.247664, max=1.576613, n=361
+[INFO] [1790517936.014844929] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.000000, max=0.000000, n=511
+[INFO] [1790517936.015636971] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.080800, max=0.094856, n=511, y: RMSE=1.240608, max=1.573579, n=511, z: RMSE=0.020696, max=0.023690, n=511, distance: RMSE=1.243409, max=1.576613, n=511
+[INFO] [1790517941.013030501] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.000000, max=0.000000, n=661
+[INFO] [1790517941.013570209] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.078573, max=0.094856, n=661, y: RMSE=1.200722, max=1.573579, n=661, z: RMSE=0.020437, max=0.023690, n=661, distance: RMSE=1.203464, max=1.576613, n=661
+[INFO] [1790517946.011361420] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.000000, max=0.000000, n=811
+[INFO] [1790517946.011910378] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.076954, max=0.094856, n=811, y: RMSE=1.170749, max=1.573579, n=811, z: RMSE=0.020236, max=0.023690, n=811, distance: RMSE=1.173450, max=1.576613, n=811
+[INFO] [1790517951.011130297] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.000000, max=0.000000, n=961
+[INFO] [1790517951.011703881] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.075558, max=0.094856, n=961, y: RMSE=1.143640, max=1.573579, n=961, z: RMSE=0.020046, max=0.023690, n=961, distance: RMSE=1.146309, max=1.576613, n=961
+[INFO] [1790517956.010240716] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.010832, max=0.105689, n=1110
+[INFO] [1790517956.010869716] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.074133, max=0.094856, n=1110, y: RMSE=1.124344, max=1.573579, n=1110, z: RMSE=0.019885, max=0.023690, n=1110, distance: RMSE=1.126961, max=1.576613, n=1110
+[INFO] [1790517961.013252802] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.015675, max=0.105689, n=1258
+[INFO] [1790517961.016007594] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.095940, max=0.450093, n=1258, y: RMSE=1.113510, max=1.573579, n=1258, z: RMSE=0.019807, max=0.026038, n=1258, distance: RMSE=1.117811, max=1.576613, n=1258
+[INFO] [1790517966.011050263] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.018412, max=0.105689, n=1406
+[INFO] [1790517966.011698596] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.300757, max=1.249222, n=1406, y: RMSE=1.096939, max=1.573579, n=1406, z: RMSE=0.022136, max=0.057260, n=1406, distance: RMSE=1.137637, max=1.576613, n=1406
+[INFO] [1790517971.010435876] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.020066, max=0.105689, n=1553
+[INFO] [1790517971.010957668] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.518949, max=1.518361, n=1553, y: RMSE=1.052608, max=1.573579, n=1553, z: RMSE=0.025053, max=0.060753, n=1553, distance: RMSE=1.173848, max=1.576613, n=1553
+[INFO] [1790517976.011318628] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.019692, max=0.105689, n=1703
+[INFO] [1790517976.011900170] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.670925, max=1.647424, n=1703, y: RMSE=1.006605, max=1.573579, n=1703, z: RMSE=0.025841, max=0.060753, n=1703, distance: RMSE=1.209984, max=1.648778, n=1703
+[INFO] [1790517981.014962631] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.024215, max=0.105689, n=1850
+[INFO] [1790517981.015580131] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.725356, max=1.647424, n=1850, y: RMSE=0.990625, max=1.573579, n=1850, z: RMSE=0.028617, max=0.060753, n=1850, distance: RMSE=1.228128, max=1.648778, n=1850
+[INFO] [1790517986.011296008] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.025702, max=0.105689, n=1998
+[INFO] [1790517986.011869175] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.711394, max=1.647424, n=1998, y: RMSE=1.001913, max=1.573579, n=1998, z: RMSE=0.030366, max=0.088327, n=1998, distance: RMSE=1.229160, max=1.648778, n=1998
+[INFO] [1790517991.012841094] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.026365, max=0.105689, n=2145
+[INFO] [1790517991.013524719] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.686726, max=1.647424, n=2145, y: RMSE=1.003329, max=1.573579, n=2145, z: RMSE=0.045835, max=0.150614, n=2145, distance: RMSE=1.216701, max=1.648778, n=2145
+[INFO] [1790517996.010546221] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.026133, max=0.105689, n=2294
+[INFO] [1790517996.011236054] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.664070, max=1.647424, n=2294, y: RMSE=1.001737, max=1.573579, n=2294, z: RMSE=0.053469, max=0.150614, n=2294, distance: RMSE=1.203049, max=1.648778, n=2294
+[INFO] [1790518001.010502418] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.025750, max=0.105689, n=2444
+[INFO] [1790518001.011004918] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.643577, max=1.647424, n=2443, y: RMSE=0.998747, max=1.573579, n=2443, z: RMSE=0.053394, max=0.150614, n=2443, distance: RMSE=1.189343, max=1.648778, n=2443
+[INFO] [1790518006.013917337] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.025306, max=0.105689, n=2593
+[INFO] [1790518006.014606920] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.624726, max=1.647424, n=2593, y: RMSE=0.991128, max=1.573579, n=2593, z: RMSE=0.052015, max=0.150614, n=2593, distance: RMSE=1.172741, max=1.648778, n=2593
+[INFO] [1790518011.010425006] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.024604, max=0.105689, n=2743
+[INFO] [1790518011.010902256] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.607433, max=1.647424, n=2743, y: RMSE=0.980572, max=1.573579, n=2743, z: RMSE=0.050706, max=0.150614, n=2743, distance: RMSE=1.154585, max=1.648778, n=2743
+[INFO] [1790518016.013710966] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023958, max=0.105689, n=2893
+[INFO] [1790518016.014387758] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.591504, max=1.647424, n=2893, y: RMSE=0.971022, max=1.573579, n=2893, z: RMSE=0.049504, max=0.150614, n=2893, distance: RMSE=1.138074, max=1.648778, n=2893
+[INFO] [1790518021.011697552] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023360, max=0.105689, n=3043
+[INFO] [1790518021.012207802] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.576769, max=1.647424, n=3043, y: RMSE=0.962652, max=1.573579, n=3043, z: RMSE=0.048397, max=0.150614, n=3043, distance: RMSE=1.123255, max=1.648778, n=3043
+[INFO] [1790518026.014728346] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022808, max=0.105689, n=3192
+[INFO] [1790518026.015403846] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.563174, max=1.647424, n=3192, y: RMSE=0.955323, max=1.573579, n=3192, z: RMSE=0.047379, max=0.150614, n=3192, distance: RMSE=1.109979, max=1.648778, n=3192
+[INFO] [1790518031.011055876] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023027, max=0.113284, n=3340
+[INFO] [1790518031.011561918] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.550580, max=1.647424, n=3340, y: RMSE=0.948295, max=1.573579, n=3340, z: RMSE=0.046407, max=0.150614, n=3340, distance: RMSE=1.097522, max=1.648778, n=3340
+[INFO] [1790518036.013065837] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022760, max=0.113284, n=3489
+[INFO] [1790518036.013529587] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.538704, max=1.647424, n=3489, y: RMSE=0.946152, max=1.573579, n=3489, z: RMSE=0.045481, max=0.150614, n=3489, distance: RMSE=1.089713, max=1.648778, n=3489
+[INFO] [1790518041.012131631] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022734, max=0.113284, n=3636
+[INFO] [1790518041.012588589] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.527716, max=1.647424, n=3636, y: RMSE=0.947073, max=1.573579, n=3636, z: RMSE=0.044695, max=0.150614, n=3636, distance: RMSE=1.085094, max=1.648778, n=3636
+[INFO] [1790518046.012040966] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022925, max=0.113284, n=3783
+[INFO] [1790518046.012494133] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.523318, max=1.647424, n=3783, y: RMSE=0.952380, max=1.573579, n=3783, z: RMSE=0.043840, max=0.150614, n=3783, distance: RMSE=1.087571, max=1.648778, n=3783
+[INFO] [1790518051.011082594] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023660, max=0.113284, n=3932
+[INFO] [1790518051.011557219] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.529762, max=1.647424, n=3932, y: RMSE=0.955028, max=1.573579, n=3932, z: RMSE=0.045485, max=0.151133, n=3932, distance: RMSE=1.093066, max=1.648778, n=3932
+[INFO] [1790518056.011653013] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023547, max=0.113284, n=4080
+[INFO] [1790518056.012115429] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.537155, max=1.647424, n=4080, y: RMSE=0.956633, max=1.573579, n=4080, z: RMSE=0.064339, max=0.279039, n=4080, distance: RMSE=1.099009, max=1.648778, n=4080
+[INFO] [1790518061.013274668] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023348, max=0.113284, n=4226
+[INFO] [1790518061.013796918] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.541376, max=1.647424, n=4226, y: RMSE=0.954524, max=1.573579, n=4226, z: RMSE=0.071945, max=0.279039, n=4226, distance: RMSE=1.099718, max=1.648778, n=4226
+[INFO] [1790518066.011976462] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023036, max=0.113284, n=4375
+[INFO] [1790518066.012458503] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.542240, max=1.647424, n=4375, y: RMSE=0.949152, max=1.573579, n=4375, z: RMSE=0.074997, max=0.279039, n=4375, distance: RMSE=1.095691, max=1.648778, n=4375
+[INFO] [1790518071.013044922] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022653, max=0.113284, n=4524
+[INFO] [1790518071.013563297] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.541652, max=1.647424, n=4524, y: RMSE=0.942531, max=1.573579, n=4524, z: RMSE=0.077678, max=0.279039, n=4524, distance: RMSE=1.089856, max=1.648778, n=4524
+[INFO] [1790518076.013593300] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022849, max=0.167944, n=4672
+[INFO] [1790518076.014147341] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.541171, max=1.647424, n=4672, y: RMSE=0.936406, max=1.573579, n=4672, z: RMSE=0.080072, max=0.279039, n=4672, distance: RMSE=1.084497, max=1.648778, n=4672
+[INFO] [1790518081.011020802] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022882, max=0.167944, n=4819
+[INFO] [1790518081.011565927] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.541148, max=1.647424, n=4819, y: RMSE=0.931306, max=1.573579, n=4819, z: RMSE=0.081368, max=0.279039, n=4819, distance: RMSE=1.080182, max=1.648778, n=4819
+[INFO] [1790518086.010407013] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023049, max=0.167944, n=4964
+[INFO] [1790518086.010789721] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.543426, max=1.647424, n=4964, y: RMSE=0.929798, max=1.573579, n=4964, z: RMSE=0.080488, max=0.279039, n=4964, distance: RMSE=1.079960, max=1.648778, n=4964
+[INFO] [1790518091.010217043] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023908, max=0.167944, n=5113
+[INFO] [1790518091.010615209] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.546661, max=1.647424, n=5113, y: RMSE=0.930165, max=1.573579, n=5113, z: RMSE=0.079313, max=0.279039, n=5113, distance: RMSE=1.081821, max=1.648778, n=5113
+[INFO] [1790518096.010816378] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.024217, max=0.167944, n=5261
+[INFO] [1790518096.011243753] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.548818, max=1.647424, n=5261, y: RMSE=0.929516, max=1.573579, n=5261, z: RMSE=0.078400, max=0.279039, n=5261, distance: RMSE=1.082288, max=1.648778, n=5261
+[INFO] [1790518101.012080131] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.024335, max=0.167944, n=5408
+[INFO] [1790518101.012594756] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.549316, max=1.647424, n=5408, y: RMSE=0.927338, max=1.573579, n=5408, z: RMSE=0.077540, max=0.279039, n=5408, distance: RMSE=1.080609, max=1.648778, n=5408
+[INFO] [1790518106.011048133] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.024218, max=0.167944, n=5557
+[INFO] [1790518106.011860508] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.546975, max=1.647424, n=5557, y: RMSE=0.922677, max=1.573579, n=5557, z: RMSE=0.076605, max=0.279039, n=5557, distance: RMSE=1.075352, max=1.648778, n=5557
+[INFO] [1790518111.010521927] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.024739, max=0.180740, n=5704
+[INFO] [1790518111.011148885] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.542708, max=1.647424, n=5704, y: RMSE=0.914962, max=1.573579, n=5704, z: RMSE=0.075618, max=0.279039, n=5704, distance: RMSE=1.066492, max=1.648778, n=5704
+[INFO] [1790518116.011283596] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.024764, max=0.180740, n=5852
+[INFO] [1790518116.011733471] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.537081, max=1.647424, n=5852, y: RMSE=0.905277, max=1.573579, n=5852, z: RMSE=0.074669, max=0.279039, n=5852, distance: RMSE=1.055253, max=1.648778, n=5852
+[INFO] [1790518121.011135293] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.024454, max=0.180740, n=6001
+[INFO] [1790518121.011687668] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.531003, max=1.647424, n=6001, y: RMSE=0.895014, max=1.573579, n=6001, z: RMSE=0.073748, max=0.279039, n=6001, distance: RMSE=1.043290, max=1.648778, n=6001
+[INFO] [1790518126.010581087] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.024152, max=0.180740, n=6152
+[INFO] [1790518126.010983628] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.524632, max=1.647424, n=6152, y: RMSE=0.884346, max=1.573579, n=6152, z: RMSE=0.072849, max=0.279039, n=6152, distance: RMSE=1.030832, max=1.648778, n=6152
+[INFO] [1790518131.010936381] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023869, max=0.180740, n=6299
+[INFO] [1790518131.011362422] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.518606, max=1.647424, n=6299, y: RMSE=0.874264, max=1.573579, n=6299, z: RMSE=0.072004, max=0.279039, n=6299, distance: RMSE=1.019056, max=1.648778, n=6299
+[INFO] [1790518136.012086841] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023745, max=0.180740, n=6445
+[INFO] [1790518136.012823841] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.512789, max=1.647424, n=6445, y: RMSE=0.864503, max=1.573579, n=6445, z: RMSE=0.071195, max=0.279039, n=6445, distance: RMSE=1.007664, max=1.648778, n=6445
+[INFO] [1790518141.011593677] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023692, max=0.180740, n=6592
+[INFO] [1790518141.012051094] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.507391, max=1.647424, n=6592, y: RMSE=0.855245, max=1.573579, n=6592, z: RMSE=0.070611, max=0.279039, n=6592, distance: RMSE=0.996933, max=1.648778, n=6592
+[INFO] [1790518146.015606888] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023634, max=0.180740, n=6740
+[INFO] [1790518146.016043054] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.502068, max=1.647424, n=6740, y: RMSE=0.845972, max=1.573579, n=6740, z: RMSE=0.069832, max=0.279039, n=6740, distance: RMSE=0.986214, max=1.648778, n=6740
+[INFO] [1790518151.012758293] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023580, max=0.180740, n=6888
+[INFO] [1790518151.013289793] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.497403, max=1.647424, n=6888, y: RMSE=0.837071, max=1.573579, n=6888, z: RMSE=0.069078, max=0.279039, n=6888, distance: RMSE=0.976151, max=1.648778, n=6888
+[INFO] [1790518156.013622253] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023550, max=0.180740, n=7034
+[INFO] [1790518156.014171170] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.493562, max=1.647424, n=7034, y: RMSE=0.828549, max=1.573579, n=7034, z: RMSE=0.068358, max=0.279039, n=7034, distance: RMSE=0.966835, max=1.648778, n=7034
+[INFO] [1790518161.010622881] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023458, max=0.180740, n=7181
+[INFO] [1790518161.011030464] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.490450, max=1.647424, n=7181, y: RMSE=0.820196, max=1.573579, n=7181, z: RMSE=0.067657, max=0.279039, n=7181, distance: RMSE=0.958040, max=1.648778, n=7181
+[INFO] [1790518166.012444883] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023534, max=0.180740, n=7328
+[INFO] [1790518166.012881883] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.488813, max=1.647424, n=7328, y: RMSE=0.812042, max=1.573579, n=7328, z: RMSE=0.066985, max=0.279039, n=7328, distance: RMSE=0.950177, max=1.648778, n=7328
+[INFO] [1790518171.010420969] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023440, max=0.180740, n=7476
+[INFO] [1790518171.010782469] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.489341, max=1.647424, n=7476, y: RMSE=0.804032, max=1.573579, n=7476, z: RMSE=0.066337, max=0.279039, n=7476, distance: RMSE=0.943569, max=1.648778, n=7476
+[INFO] [1790518176.010285096] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023465, max=0.180740, n=7623
+[INFO] [1790518176.010723596] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.488526, max=1.647424, n=7623, y: RMSE=0.796271, max=1.573579, n=7623, z: RMSE=0.065715, max=0.279039, n=7623, distance: RMSE=0.936495, max=1.648778, n=7623
+[INFO] [1790518181.011097209] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023400, max=0.180740, n=7768
+[INFO] [1790518181.011574501] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.485706, max=1.647424, n=7768, y: RMSE=0.788817, max=1.573579, n=7768, z: RMSE=0.065103, max=0.279039, n=7768, distance: RMSE=0.928645, max=1.648778, n=7768
+[INFO] [1790518186.010439128] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023304, max=0.180740, n=7916
+[INFO] [1790518186.010926837] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.481914, max=1.647424, n=7916, y: RMSE=0.781414, max=1.573579, n=7916, z: RMSE=0.064493, max=0.279039, n=7916, distance: RMSE=0.920331, max=1.648778, n=7916
+[INFO] [1790518191.010199631] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.023091, max=0.180740, n=8063
+[INFO] [1790518191.010587339] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.477631, max=1.647424, n=8063, y: RMSE=0.774259, max=1.573579, n=8063, z: RMSE=0.063903, max=0.279039, n=8063, distance: RMSE=0.911971, max=1.648778, n=8063
+[INFO] [1790518196.010296675] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022883, max=0.180740, n=8210
+[INFO] [1790518196.010795883] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.473447, max=1.647424, n=8210, y: RMSE=0.767297, max=1.573579, n=8210, z: RMSE=0.063329, max=0.279039, n=8210, distance: RMSE=0.903829, max=1.648778, n=8210
+[INFO] [1790518201.010683552] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022684, max=0.180740, n=8355
+[INFO] [1790518201.011121344] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.469361, max=1.647424, n=8355, y: RMSE=0.760610, max=1.573579, n=8355, z: RMSE=0.062777, max=0.279039, n=8355, distance: RMSE=0.895974, max=1.648778, n=8355
+[INFO] [1790518206.010787804] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022490, max=0.180740, n=8500
+[INFO] [1790518206.011187846] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.465382, max=1.647424, n=8500, y: RMSE=0.754095, max=1.573579, n=8500, z: RMSE=0.062239, max=0.279039, n=8500, distance: RMSE=0.888321, max=1.648778, n=8500
+[INFO] [1790518211.011068251] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022296, max=0.180740, n=8648
+[INFO] [1790518211.011550418] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.461427, max=1.647424, n=8648, y: RMSE=0.747615, max=1.573579, n=8648, z: RMSE=0.061704, max=0.279039, n=8648, distance: RMSE=0.880710, max=1.648778, n=8648
+[INFO] [1790518216.010852253] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022295, max=0.180740, n=8795
+[INFO] [1790518216.011716628] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.457653, max=1.647424, n=8795, y: RMSE=0.741341, max=1.573579, n=8795, z: RMSE=0.061187, max=0.279039, n=8795, distance: RMSE=0.873371, max=1.648778, n=8795
+[INFO] [1790518221.011594756] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022313, max=0.180740, n=8941
+[INFO] [1790518221.011985214] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.454518, max=1.647424, n=8941, y: RMSE=0.735268, max=1.573579, n=8941, z: RMSE=0.060686, max=0.279039, n=8941, distance: RMSE=0.866539, max=1.648778, n=8941
+[INFO] [1790518226.010247008] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022346, max=0.180740, n=9088
+[INFO] [1790518226.010829716] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.450983, max=1.647424, n=9088, y: RMSE=0.729299, max=1.573579, n=9088, z: RMSE=0.060194, max=0.279039, n=9088, distance: RMSE=0.859585, max=1.648778, n=9088
+[INFO] [1790518231.010406094] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022298, max=0.180740, n=9235
+[INFO] [1790518231.010942302] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.447931, max=1.647424, n=9235, y: RMSE=0.723475, max=1.573579, n=9235, z: RMSE=0.059714, max=0.279039, n=9235, distance: RMSE=0.853009, max=1.648778, n=9235
+[INFO] [1790518236.010338304] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022374, max=0.180740, n=9379
+[INFO] [1790518236.010720596] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.445065, max=1.647424, n=9379, y: RMSE=0.717904, max=1.573579, n=9379, z: RMSE=0.059254, max=0.279039, n=9379, distance: RMSE=0.846747, max=1.648778, n=9379
+[INFO] [1790518241.010331376] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022443, max=0.180740, n=9524
+[INFO] [1790518241.010726334] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.442089, max=1.647424, n=9524, y: RMSE=0.712422, max=1.573579, n=9524, z: RMSE=0.058802, max=0.279039, n=9524, distance: RMSE=0.840502, max=1.648778, n=9524
+[INFO] [1790518246.010673420] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022475, max=0.180740, n=9669
+[INFO] [1790518246.011064712] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.439437, max=1.647424, n=9669, y: RMSE=0.707065, max=1.573579, n=9669, z: RMSE=0.058359, max=0.279039, n=9669, distance: RMSE=0.834536, max=1.648778, n=9669
+[INFO] [1790518251.010210214] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022660, max=0.180740, n=9819
+[INFO] [1790518251.010620631] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.436631, max=1.647424, n=9819, y: RMSE=0.701647, max=1.573579, n=9819, z: RMSE=0.057912, max=0.279039, n=9819, distance: RMSE=0.828438, max=1.648778, n=9819
+[INFO] [1790518256.011542758] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022598, max=0.180740, n=9967
+[INFO] [1790518256.012075675] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.433719, max=1.647424, n=9967, y: RMSE=0.696420, max=1.573579, n=9967, z: RMSE=0.057481, max=0.279039, n=9967, distance: RMSE=0.822445, max=1.648778, n=9967
+[INFO] [1790518261.010904635] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022536, max=0.180740, n=10111
+[INFO] [1790518261.011268635] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.430929, max=1.647424, n=10110, y: RMSE=0.691478, max=1.573579, n=10110, z: RMSE=0.057073, max=0.279039, n=10110, distance: RMSE=0.816761, max=1.648778, n=10110
+[INFO] [1790518266.013089346] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022551, max=0.180740, n=10255
+[INFO] [1790518266.014911721] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.428038, max=1.647424, n=10255, y: RMSE=0.686579, max=1.573579, n=10255, z: RMSE=0.056683, max=0.279039, n=10255, distance: RMSE=0.811061, max=1.648778, n=10255
+[INFO] [1790518271.010637126] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022640, max=0.180740, n=10405
+[INFO] [1790518271.011016001] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.425152, max=1.647424, n=10405, y: RMSE=0.681647, max=1.573579, n=10405, z: RMSE=0.059707, max=0.288241, n=10405, distance: RMSE=0.805582, max=1.648778, n=10405
+[INFO] [1790518276.011600045] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022588, max=0.180740, n=10552
+[INFO] [1790518276.014286628] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.422597, max=1.647424, n=10552, y: RMSE=0.676888, max=1.573579, n=10552, z: RMSE=0.060018, max=0.288241, n=10552, distance: RMSE=0.800230, max=1.648778, n=10552
+[INFO] [1790518281.015054547] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022587, max=0.180740, n=10698
+[INFO] [1790518281.015905047] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.424012, max=1.647424, n=10698, y: RMSE=0.672259, max=1.573579, n=10698, z: RMSE=0.059610, max=0.288241, n=10698, distance: RMSE=0.797040, max=1.648778, n=10698
+[INFO] [1790518286.012455008] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022542, max=0.180740, n=10846
+[INFO] [1790518286.013740675] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.422906, max=1.647424, n=10846, y: RMSE=0.667659, max=1.573579, n=10846, z: RMSE=0.059203, max=0.288241, n=10846, distance: RMSE=0.792542, max=1.648778, n=10846
+[INFO] [1790518291.011446635] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022562, max=0.180740, n=10991
+[INFO] [1790518291.012794177] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.421932, max=1.647424, n=10991, y: RMSE=0.663243, max=1.573579, n=10991, z: RMSE=0.058812, max=0.288241, n=10991, distance: RMSE=0.788274, max=1.648778, n=10991
+[INFO] [1790518296.010278929] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022537, max=0.180740, n=11138
+[INFO] [1790518296.011566554] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.422010, max=1.647424, n=11138, y: RMSE=0.658855, max=1.573579, n=11138, z: RMSE=0.058424, max=0.288241, n=11138, distance: RMSE=0.784599, max=1.648778, n=11138
+[INFO] [1790518301.012518334] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022571, max=0.180740, n=11284
+[INFO] [1790518301.014136751] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.422537, max=1.647424, n=11284, y: RMSE=0.654583, max=1.573579, n=11284, z: RMSE=0.058047, max=0.288241, n=11284, distance: RMSE=0.781272, max=1.648778, n=11284
+[INFO] [1790518306.013445670] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022585, max=0.180740, n=11430
+[INFO] [1790518306.014762587] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.425763, max=1.647424, n=11430, y: RMSE=0.650397, max=1.573579, n=11430, z: RMSE=0.057681, max=0.288241, n=11430, distance: RMSE=0.779499, max=1.648778, n=11430
+[INFO] [1790518311.012966047] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022600, max=0.180740, n=11575
+[INFO] [1790518311.013652381] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.430714, max=1.647424, n=11575, y: RMSE=0.646321, max=1.573579, n=11575, z: RMSE=0.057329, max=0.288241, n=11575, distance: RMSE=0.778802, max=1.648778, n=11575
+[INFO] [1790518316.013969591] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022839, max=0.180740, n=11721
+[INFO] [1790518316.014725591] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.440010, max=1.647424, n=11721, y: RMSE=0.642300, max=1.573579, n=11721, z: RMSE=0.056997, max=0.288241, n=11721, distance: RMSE=0.780645, max=1.648778, n=11721
+[INFO] [1790518321.018254385] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022799, max=0.180740, n=11870
+[INFO] [1790518321.018738260] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.455121, max=1.647424, n=11870, y: RMSE=0.638283, max=1.573579, n=11870, z: RMSE=0.056685, max=0.288241, n=11870, distance: RMSE=0.785973, max=1.648778, n=11870
+[INFO] [1790518326.011128429] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022790, max=0.180740, n=12016
+[INFO] [1790518326.011767804] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.468645, max=1.647424, n=12016, y: RMSE=0.634419, max=1.573579, n=12016, z: RMSE=0.056388, max=0.288241, n=12016, distance: RMSE=0.790756, max=1.648778, n=12016
+[INFO] [1790518331.010207209] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022725, max=0.180740, n=12161
+[INFO] [1790518331.010696334] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.477480, max=1.647424, n=12161, y: RMSE=0.630643, max=1.573579, n=12161, z: RMSE=0.056105, max=0.288241, n=12161, distance: RMSE=0.792998, max=1.648778, n=12161
+[INFO] [1790518336.012958837] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022710, max=0.180740, n=12305
+[INFO] [1790518336.013678545] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.484157, max=1.647424, n=12305, y: RMSE=0.626957, max=1.573579, n=12305, z: RMSE=0.055851, max=0.288241, n=12305, distance: RMSE=0.794105, max=1.648778, n=12305
+[INFO] [1790518341.014152839] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.022647, max=0.180740, n=12449
+[INFO] [1790518341.015315131] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.494366, max=1.647424, n=12449, y: RMSE=0.623343, max=1.573579, n=12449, z: RMSE=0.055668, max=0.288241, n=12449, distance: RMSE=0.797529, max=1.648778, n=12449
+[INFO] [1790518346.012521800] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.024952, max=0.219130, n=12595
+[INFO] [1790518346.013294008] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.505702, max=1.647424, n=12595, y: RMSE=0.620096, max=1.573579, n=12595, z: RMSE=0.056050, max=0.288241, n=12595, distance: RMSE=0.802119, max=1.648778, n=12595
+[INFO] [1790518351.013037469] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027116, max=0.255328, n=12740
+[INFO] [1790518351.014174135] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.522050, max=1.647424, n=12740, y: RMSE=0.617639, max=1.573579, n=12740, z: RMSE=0.056851, max=0.288241, n=12740, distance: RMSE=0.810707, max=1.648778, n=12740
+[INFO] [1790518356.012125096] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027349, max=0.255328, n=12884
+[INFO] [1790518356.012690679] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.544130, max=1.647424, n=12884, y: RMSE=0.615403, max=1.573579, n=12884, z: RMSE=0.057715, max=0.288241, n=12884, distance: RMSE=0.823487, max=1.648778, n=12884
+[INFO] [1790518361.014162334] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027339, max=0.255328, n=13028
+[INFO] [1790518361.015771834] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.557484, max=1.687473, n=13028, y: RMSE=0.613151, max=1.573579, n=13028, z: RMSE=0.058298, max=0.288241, n=13028, distance: RMSE=0.830747, max=1.732511, n=13028
+[INFO] [1790518366.011682087] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027281, max=0.255328, n=13175
+[INFO] [1790518366.012635753] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.561531, max=1.687473, n=13175, y: RMSE=0.610648, max=1.573579, n=13175, z: RMSE=0.058278, max=0.288241, n=13175, distance: RMSE=0.831627, max=1.732511, n=13175
+[INFO] [1790518371.012594756] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027198, max=0.255328, n=13319
+[INFO] [1790518371.013014797] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.564291, max=1.687473, n=13319, y: RMSE=0.607537, max=1.573579, n=13319, z: RMSE=0.058018, max=0.288241, n=13319, distance: RMSE=0.831199, max=1.732511, n=13319
+[INFO] [1790518376.011867800] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027127, max=0.255328, n=13466
+[INFO] [1790518376.012342133] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.569804, max=1.687473, n=13466, y: RMSE=0.604222, max=1.573579, n=13466, z: RMSE=0.057799, max=0.288241, n=13466, distance: RMSE=0.832527, max=1.732511, n=13466
+[INFO] [1790518381.011970094] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027113, max=0.255328, n=13609
+[INFO] [1790518381.012447594] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.577471, max=1.687473, n=13609, y: RMSE=0.601053, max=1.573579, n=13609, z: RMSE=0.057607, max=0.288241, n=13609, distance: RMSE=0.835497, max=1.732511, n=13609
+[INFO] [1790518386.014517971] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028188, max=0.255328, n=13753
+[INFO] [1790518386.015176429] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.583986, max=1.687473, n=13753, y: RMSE=0.597911, max=1.573579, n=13753, z: RMSE=0.057396, max=0.288241, n=13753, distance: RMSE=0.837754, max=1.732511, n=13753
+[INFO] [1790518391.012019584] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028144, max=0.255328, n=13899
+[INFO] [1790518391.012894709] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.593964, max=1.687473, n=13899, y: RMSE=0.594780, max=1.573579, n=13899, z: RMSE=0.057316, max=0.288241, n=13899, distance: RMSE=0.842521, max=1.732511, n=13899
+[INFO] [1790518396.010604795] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028095, max=0.255328, n=14045
+[INFO] [1790518396.011252212] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.604948, max=1.687473, n=14045, y: RMSE=0.591705, max=1.573579, n=14045, z: RMSE=0.057031, max=0.288241, n=14045, distance: RMSE=0.848133, max=1.732511, n=14045
+[INFO] [1790518401.011502214] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028071, max=0.255328, n=14191
+[INFO] [1790518401.012310297] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.613037, max=1.687473, n=14191, y: RMSE=0.588863, max=1.573579, n=14191, z: RMSE=0.056739, max=0.288241, n=14191, distance: RMSE=0.851935, max=1.732511, n=14191
+[INFO] [1790518406.010838008] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028016, max=0.255328, n=14336
+[INFO] [1790518406.011385716] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.619680, max=1.687473, n=14335, y: RMSE=0.586494, max=1.573579, n=14335, z: RMSE=0.056457, max=0.288241, n=14335, distance: RMSE=0.855082, max=1.732511, n=14335
+[INFO] [1790518411.011251094] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028056, max=0.255328, n=14480
+[INFO] [1790518411.012975844] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.628297, max=1.687473, n=14480, y: RMSE=0.584339, max=1.573579, n=14480, z: RMSE=0.056175, max=0.288241, n=14480, distance: RMSE=0.859863, max=1.732511, n=14480
+[INFO] [1790518416.012977554] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028097, max=0.255328, n=14621
+[INFO] [1790518416.013553888] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.640345, max=1.687473, n=14621, y: RMSE=0.582552, max=1.573579, n=14621, z: RMSE=0.055904, max=0.288241, n=14621, distance: RMSE=0.867488, max=1.732511, n=14621
+[INFO] [1790518421.012454876] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028182, max=0.255328, n=14766
+[INFO] [1790518421.013778168] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.655962, max=1.814895, n=14766, y: RMSE=0.581005, max=1.573579, n=14766, z: RMSE=0.055633, max=0.288241, n=14766, distance: RMSE=0.878036, max=1.871214, n=14766
+[INFO] [1790518426.011251295] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028172, max=0.255328, n=14914
+[INFO] [1790518426.012274295] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.673841, max=1.891162, n=14914, y: RMSE=0.579651, max=1.573579, n=14914, z: RMSE=0.055358, max=0.288241, n=14914, distance: RMSE=0.890574, max=1.950820, n=14914
+[INFO] [1790518431.010949881] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028429, max=0.255328, n=15055
+[INFO] [1790518431.011490464] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.694616, max=2.040064, n=15055, y: RMSE=0.578720, max=1.573579, n=15055, z: RMSE=0.055099, max=0.288241, n=15055, distance: RMSE=0.905784, max=2.103702, n=15055
+[INFO] [1790518436.010520925] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029204, max=0.276281, n=15199
+[INFO] [1790518436.011071675] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.719089, max=2.251817, n=15199, y: RMSE=0.577479, max=1.573579, n=15199, z: RMSE=0.054842, max=0.288241, n=15199, distance: RMSE=0.923893, max=2.280978, n=15199
+[INFO] [1790518441.012349677] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029124, max=0.276281, n=15344
+[INFO] [1790518441.012793969] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.744262, max=2.281680, n=15344, y: RMSE=0.574976, max=1.573579, n=15344, z: RMSE=0.054583, max=0.288241, n=15344, distance: RMSE=0.942074, max=2.300724, n=15344
+[INFO] [1790518446.010591138] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029123, max=0.276281, n=15486
+[INFO] [1790518446.011102429] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.767447, max=2.281680, n=15486, y: RMSE=0.572415, max=1.573579, n=15486, z: RMSE=0.054368, max=0.288241, n=15486, distance: RMSE=0.958952, max=2.300724, n=15486
+[INFO] [1790518451.010719459] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029085, max=0.276281, n=15629
+[INFO] [1790518451.011056626] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.790685, max=2.334655, n=15629, y: RMSE=0.569908, max=1.573579, n=15629, z: RMSE=0.054120, max=0.288241, n=15629, distance: RMSE=0.976169, max=2.340296, n=15629
+[INFO] [1790518456.012638295] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029033, max=0.276281, n=15771
+[INFO] [1790518456.013277587] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.799696, max=2.372020, n=15771, y: RMSE=0.567522, max=1.573579, n=15771, z: RMSE=0.053877, max=0.288241, n=15771, distance: RMSE=0.982089, max=2.381856, n=15771
+[INFO] [1790518461.011676339] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028951, max=0.276281, n=15916
+[INFO] [1790518461.012275131] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.803548, max=2.372020, n=15915, y: RMSE=0.565462, max=1.573579, n=15915, z: RMSE=0.053633, max=0.288241, n=15915, distance: RMSE=0.984029, max=2.381856, n=15915
+[INFO] [1790518466.012436383] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028924, max=0.276281, n=16057
+[INFO] [1790518466.012884716] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.807854, max=2.372020, n=16057, y: RMSE=0.563640, max=1.573579, n=16057, z: RMSE=0.053406, max=0.288241, n=16057, distance: RMSE=0.986494, max=2.381856, n=16057
+[INFO] [1790518471.010956135] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028950, max=0.276281, n=16199
+[INFO] [1790518471.011935719] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.813558, max=2.372020, n=16199, y: RMSE=0.561980, max=1.573579, n=16199, z: RMSE=0.053194, max=0.288241, n=16199, distance: RMSE=0.990216, max=2.381856, n=16199
+[INFO] [1790518476.013960013] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028873, max=0.276281, n=16343
+[INFO] [1790518476.014483013] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.821263, max=2.372020, n=16343, y: RMSE=0.560503, max=1.573579, n=16343, z: RMSE=0.052992, max=0.288241, n=16343, distance: RMSE=0.995713, max=2.381856, n=16343
+[INFO] [1790518481.010152876] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028838, max=0.276281, n=16488
+[INFO] [1790518481.011007001] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.832024, max=2.372020, n=16488, y: RMSE=0.559339, max=1.573579, n=16488, z: RMSE=0.052804, max=0.288241, n=16488, distance: RMSE=1.003949, max=2.381856, n=16488
+[INFO] [1790518486.011100087] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028793, max=0.276281, n=16630
+[INFO] [1790518486.012400670] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.840966, max=2.372020, n=16630, y: RMSE=0.558096, max=1.573579, n=16630, z: RMSE=0.052623, max=0.288241, n=16630, distance: RMSE=1.010675, max=2.381856, n=16630
+[INFO] [1790518491.010333089] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028763, max=0.276281, n=16773
+[INFO] [1790518491.010970714] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.848202, max=2.372020, n=16773, y: RMSE=0.556725, max=1.573579, n=16773, z: RMSE=0.052477, max=0.288241, n=16773, distance: RMSE=1.015944, max=2.381856, n=16773
+[INFO] [1790518496.011424675] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028704, max=0.276281, n=16914
+[INFO] [1790518496.012611508] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.856662, max=2.372020, n=16914, y: RMSE=0.555542, max=1.573579, n=16914, z: RMSE=0.052303, max=0.288241, n=16914, distance: RMSE=1.022366, max=2.381856, n=16914
+[INFO] [1790518501.011912010] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028683, max=0.276281, n=17055
+[INFO] [1790518501.012705885] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.867883, max=2.372020, n=17055, y: RMSE=0.554700, max=1.573579, n=17055, z: RMSE=0.052141, max=0.288241, n=17055, distance: RMSE=1.031325, max=2.381856, n=17055
+[INFO] [1790518506.010210513] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028563, max=0.276281, n=17198
+[INFO] [1790518506.010590971] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.881734, max=2.372020, n=17198, y: RMSE=0.554141, max=1.573579, n=17198, z: RMSE=0.051990, max=0.288241, n=17198, distance: RMSE=1.042703, max=2.381856, n=17198
+[INFO] [1790518511.010169209] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028445, max=0.276281, n=17341
+[INFO] [1790518511.010632209] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.895200, max=2.372020, n=17341, y: RMSE=0.553597, max=1.573579, n=17341, z: RMSE=0.051840, max=0.288241, n=17341, distance: RMSE=1.053821, max=2.381856, n=17341
+[INFO] [1790518516.010416003] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028328, max=0.276281, n=17484
+[INFO] [1790518516.010755087] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.908191, max=2.372020, n=17484, y: RMSE=0.553054, max=1.573579, n=17484, z: RMSE=0.051693, max=0.288241, n=17484, distance: RMSE=1.064590, max=2.381856, n=17484
+[INFO] [1790518521.010643672] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028214, max=0.276281, n=17626
+[INFO] [1790518521.011126714] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.920819, max=2.372020, n=17626, y: RMSE=0.552536, max=1.573579, n=17626, z: RMSE=0.051549, max=0.288241, n=17626, distance: RMSE=1.075110, max=2.381856, n=17626
+[INFO] [1790518526.010548133] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028340, max=0.276281, n=17767
+[INFO] [1790518526.010924258] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.932916, max=2.372020, n=17767, y: RMSE=0.552014, max=1.573579, n=17767, z: RMSE=0.051407, max=0.288241, n=17767, distance: RMSE=1.085216, max=2.381856, n=17767
+[INFO] [1790518531.010347510] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028294, max=0.276281, n=17910
+[INFO] [1790518531.010771260] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.944102, max=2.372020, n=17910, y: RMSE=0.551362, max=1.573579, n=17910, z: RMSE=0.051261, max=0.288241, n=17910, distance: RMSE=1.094511, max=2.381856, n=17910
+[INFO] [1790518536.010528054] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028181, max=0.276281, n=18054
+[INFO] [1790518536.010865971] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.955820, max=2.372020, n=18054, y: RMSE=0.550794, max=1.573579, n=18054, z: RMSE=0.051118, max=0.288241, n=18054, distance: RMSE=1.104346, max=2.381856, n=18054
+[INFO] [1790518541.010209293] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028070, max=0.276281, n=18197
+[INFO] [1790518541.010604001] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.967146, max=2.372020, n=18197, y: RMSE=0.550241, max=1.573579, n=18197, z: RMSE=0.050978, max=0.288241, n=18197, distance: RMSE=1.113882, max=2.381856, n=18197
+[INFO] [1790518546.014322378] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027962, max=0.276281, n=18338
+[INFO] [1790518546.014777587] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.977934, max=2.372020, n=18338, y: RMSE=0.549694, max=1.573579, n=18338, z: RMSE=0.050842, max=0.288241, n=18338, distance: RMSE=1.122988, max=2.381856, n=18338
+[INFO] [1790518551.010082506] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027854, max=0.276281, n=18480
+[INFO] [1790518551.010470131] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.980755, max=2.372020, n=18480, y: RMSE=0.548298, max=1.573579, n=18480, z: RMSE=0.050674, max=0.288241, n=18480, distance: RMSE=1.124757, max=2.381856, n=18480
+[INFO] [1790518556.010594550] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027746, max=0.276281, n=18624
+[INFO] [1790518556.011204550] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.979923, max=2.372020, n=18624, y: RMSE=0.546500, max=1.573579, n=18624, z: RMSE=0.050490, max=0.288241, n=18624, distance: RMSE=1.123147, max=2.381856, n=18624
+[INFO] [1790518561.010305719] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027640, max=0.276281, n=18767
+[INFO] [1790518561.010725885] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.979108, max=2.372020, n=18767, y: RMSE=0.544735, max=1.573579, n=18767, z: RMSE=0.050310, max=0.288241, n=18767, distance: RMSE=1.121570, max=2.381856, n=18767
+[INFO] [1790518566.010674554] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027539, max=0.276281, n=18905
+[INFO] [1790518566.011149304] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.978366, max=2.372020, n=18905, y: RMSE=0.543057, max=1.573579, n=18905, z: RMSE=0.050138, max=0.288241, n=18905, distance: RMSE=1.120100, max=2.381856, n=18905
+[INFO] [1790518571.010036209] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027518, max=0.276281, n=19046
+[INFO] [1790518571.010457168] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.977604, max=2.372020, n=19046, y: RMSE=0.541360, max=1.573579, n=19046, z: RMSE=0.049964, max=0.288241, n=19046, distance: RMSE=1.118604, max=2.381856, n=19046
+[INFO] [1790518576.011206003] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027512, max=0.276281, n=19187
+[INFO] [1790518576.011778753] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.976364, max=2.372020, n=19187, y: RMSE=0.539627, max=1.573579, n=19187, z: RMSE=0.049790, max=0.288241, n=19187, distance: RMSE=1.116675, max=2.381856, n=19187
+[INFO] [1790518581.011349256] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027521, max=0.276281, n=19327
+[INFO] [1790518581.012088881] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.974313, max=2.372020, n=19327, y: RMSE=0.537836, max=1.573579, n=19327, z: RMSE=0.049615, max=0.288241, n=19327, distance: RMSE=1.114009, max=2.381856, n=19327
+[INFO] [1790518586.010328300] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027496, max=0.276281, n=19468
+[INFO] [1790518586.010719425] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.971714, max=2.372020, n=19468, y: RMSE=0.535990, max=1.573579, n=19468, z: RMSE=0.049439, max=0.288241, n=19468, distance: RMSE=1.110836, max=2.381856, n=19468
+[INFO] [1790518591.010568427] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027461, max=0.276281, n=19608
+[INFO] [1790518591.013585094] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.968737, max=2.372020, n=19608, y: RMSE=0.534130, max=1.573579, n=19608, z: RMSE=0.049264, max=0.288241, n=19608, distance: RMSE=1.107327, max=2.381856, n=19608
+[INFO] [1790518596.010078096] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027423, max=0.276281, n=19748
+[INFO] [1790518596.010415513] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.966055, max=2.372020, n=19747, y: RMSE=0.532334, max=1.573579, n=19747, z: RMSE=0.049092, max=0.288241, n=19747, distance: RMSE=1.104107, max=2.381856, n=19747
+[INFO] [1790518601.011477126] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027401, max=0.276281, n=19887
+[INFO] [1790518601.012099751] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.963823, max=2.372020, n=19887, y: RMSE=0.530610, max=1.573579, n=19887, z: RMSE=0.048922, max=0.288241, n=19887, distance: RMSE=1.101315, max=2.381856, n=19887
+[INFO] [1790518606.011031003] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027830, max=0.276281, n=20025
+[INFO] [1790518606.011800795] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.961313, max=2.372020, n=20025, y: RMSE=0.528888, max=1.573579, n=20025, z: RMSE=0.048756, max=0.288241, n=20025, distance: RMSE=1.098281, max=2.381856, n=20025
+[INFO] [1790518611.010880464] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027836, max=0.276281, n=20166
+[INFO] [1790518611.011287422] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.959506, max=2.372020, n=20166, y: RMSE=0.527246, max=1.573579, n=20166, z: RMSE=0.048592, max=0.288241, n=20166, distance: RMSE=1.095902, max=2.381856, n=20166
+[INFO] [1790518616.010293216] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027825, max=0.276281, n=20305
+[INFO] [1790518616.010768383] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.957848, max=2.372020, n=20305, y: RMSE=0.525656, max=1.573579, n=20305, z: RMSE=0.048432, max=0.288241, n=20305, distance: RMSE=1.093678, max=2.381856, n=20305
+[INFO] [1790518621.012888094] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027777, max=0.276281, n=20443
+[INFO] [1790518621.013434135] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.955325, max=2.372020, n=20443, y: RMSE=0.523973, max=1.573579, n=20443, z: RMSE=0.048270, max=0.288241, n=20443, distance: RMSE=1.090653, max=2.381856, n=20443
+[INFO] [1790518626.011161763] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027753, max=0.276281, n=20584
+[INFO] [1790518626.012559096] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.952565, max=2.372020, n=20584, y: RMSE=0.522244, max=1.573579, n=20584, z: RMSE=0.048107, max=0.288241, n=20584, distance: RMSE=1.087397, max=2.381856, n=20584
+[INFO] [1790518631.012757668] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027750, max=0.276281, n=20725
+[INFO] [1790518631.014216876] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.949808, max=2.372020, n=20725, y: RMSE=0.520530, max=1.573579, n=20725, z: RMSE=0.047944, max=0.288241, n=20725, distance: RMSE=1.084152, max=2.381856, n=20725
+[INFO] [1790518636.010605837] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027764, max=0.276281, n=20863
+[INFO] [1790518636.011230670] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.947725, max=2.372020, n=20863, y: RMSE=0.518951, max=1.573579, n=20863, z: RMSE=0.047788, max=0.288241, n=20863, distance: RMSE=1.081562, max=2.381856, n=20863
+[INFO] [1790518641.010689256] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027673, max=0.276281, n=21001
+[INFO] [1790518641.011257589] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.946065, max=2.372020, n=21001, y: RMSE=0.517443, max=1.573579, n=21001, z: RMSE=0.047635, max=0.288241, n=21001, distance: RMSE=1.079377, max=2.381856, n=21001
+[INFO] [1790518646.015471216] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027583, max=0.276281, n=21139
+[INFO] [1790518646.018434050] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.944404, max=2.372020, n=21139, y: RMSE=0.515947, max=1.573579, n=21139, z: RMSE=0.047484, max=0.288241, n=21139, distance: RMSE=1.077198, max=2.381856, n=21139
+[INFO] [1790518651.017192094] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027494, max=0.276281, n=21276
+[INFO] [1790518651.019829385] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.942785, max=2.372020, n=21276, y: RMSE=0.514479, max=1.573579, n=21276, z: RMSE=0.047335, max=0.288241, n=21276, distance: RMSE=1.075069, max=2.381856, n=21276
+[INFO] [1790518656.010229096] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027403, max=0.276281, n=21417
+[INFO] [1790518656.010761138] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.941168, max=2.372020, n=21417, y: RMSE=0.512987, max=1.573579, n=21417, z: RMSE=0.047183, max=0.288241, n=21417, distance: RMSE=1.072930, max=2.381856, n=21417
+[INFO] [1790518661.013491793] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027313, max=0.276281, n=21558
+[INFO] [1790518661.013991084] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.939574, max=2.372020, n=21558, y: RMSE=0.511512, max=1.573579, n=21558, z: RMSE=0.047033, max=0.288241, n=21558, distance: RMSE=1.070821, max=2.381856, n=21558
+[INFO] [1790518666.010891337] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027393, max=0.276281, n=21698
+[INFO] [1790518666.011505045] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.937072, max=2.372020, n=21698, y: RMSE=0.509933, max=1.573579, n=21698, z: RMSE=0.046882, max=0.288241, n=21698, distance: RMSE=1.067864, max=2.381856, n=21698
+[INFO] [1790518671.010315339] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027445, max=0.276281, n=21837
+[INFO] [1790518671.013003839] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.934191, max=2.372020, n=21837, y: RMSE=0.508321, max=1.573579, n=21837, z: RMSE=0.046733, max=0.288241, n=21837, distance: RMSE=1.064559, max=2.381856, n=21837
+[INFO] [1790518676.010663675] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027518, max=0.276281, n=21979
+[INFO] [1790518676.011269050] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.931614, max=2.372020, n=21979, y: RMSE=0.506737, max=1.573579, n=21979, z: RMSE=0.046583, max=0.288241, n=21979, distance: RMSE=1.061535, max=2.381856, n=21979
+[INFO] [1790518681.010909635] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027504, max=0.276281, n=22119
+[INFO] [1790518681.011818177] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.929711, max=2.372020, n=22119, y: RMSE=0.505272, max=1.573579, n=22119, z: RMSE=0.046439, max=0.288241, n=22119, distance: RMSE=1.059159, max=2.381856, n=22119
+[INFO] [1790518686.010669888] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027499, max=0.276281, n=22259
+[INFO] [1790518686.011172804] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.927981, max=2.372020, n=22259, y: RMSE=0.503839, max=1.573579, n=22259, z: RMSE=0.046296, max=0.288241, n=22259, distance: RMSE=1.056952, max=2.381856, n=22259
+[INFO] [1790518691.015558251] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027493, max=0.276281, n=22399
+[INFO] [1790518691.015942876] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.925577, max=2.372020, n=22399, y: RMSE=0.502329, max=1.573579, n=22399, z: RMSE=0.046153, max=0.288241, n=22399, distance: RMSE=1.054114, max=2.381856, n=22399
+[INFO] [1790518696.010653795] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027469, max=0.276281, n=22542
+[INFO] [1790518696.011091920] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.922939, max=2.372020, n=22542, y: RMSE=0.500774, max=1.573579, n=22542, z: RMSE=0.046008, max=0.288241, n=22542, distance: RMSE=1.051050, max=2.381856, n=22542
+[INFO] [1790518701.010420381] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.027473, max=0.276281, n=22680
+[INFO] [1790518701.010948339] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.920535, max=2.372020, n=22680, y: RMSE=0.499303, max=1.573579, n=22680, z: RMSE=0.045870, max=0.288241, n=22680, distance: RMSE=1.048233, max=2.381856, n=22680
+[INFO] [1790518706.010732800] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028136, max=0.307606, n=22820
+[INFO] [1790518706.011195758] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.918052, max=2.372020, n=22820, y: RMSE=0.497814, max=1.573579, n=22820, z: RMSE=0.045730, max=0.288241, n=22820, distance: RMSE=1.045337, max=2.381856, n=22820
+[INFO] [1790518711.020544344] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028075, max=0.307606, n=22956
+[INFO] [1790518711.033814552] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.915918, max=2.372020, n=22956, y: RMSE=0.496363, max=1.573579, n=22956, z: RMSE=0.045598, max=0.288241, n=22956, distance: RMSE=1.042766, max=2.381856, n=22956
+[INFO] [1790518716.013734638] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028065, max=0.307606, n=23098
+[INFO] [1790518716.014312346] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.914581, max=2.372020, n=23098, y: RMSE=0.494882, max=1.573579, n=23098, z: RMSE=0.045465, max=0.288241, n=23098, distance: RMSE=1.040881, max=2.381856, n=23098
+[INFO] [1790518721.010560959] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028048, max=0.307606, n=23244
+[INFO] [1790518721.011244668] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.914103, max=2.372020, n=23244, y: RMSE=0.494253, max=1.573579, n=23244, z: RMSE=0.045337, max=0.288241, n=23244, distance: RMSE=1.040157, max=2.381856, n=23244
+[INFO] [1790518726.010587170] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028245, max=0.307606, n=23384
+[INFO] [1790518726.012378045] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.912843, max=2.372020, n=23384, y: RMSE=0.494649, max=1.573579, n=23384, z: RMSE=0.045216, max=0.288241, n=23384, distance: RMSE=1.039233, max=2.381856, n=23384
+[INFO] [1790518731.010546381] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028648, max=0.307606, n=23529
+[INFO] [1790518731.011281547] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.911335, max=2.372020, n=23529, y: RMSE=0.500439, max=1.573579, n=23529, z: RMSE=0.045119, max=0.288241, n=23529, distance: RMSE=1.040676, max=2.381856, n=23529
+[INFO] [1790518736.010584591] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028806, max=0.307606, n=23669
+[INFO] [1790518736.011123966] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.909366, max=2.372020, n=23669, y: RMSE=0.506573, max=1.573579, n=23669, z: RMSE=0.045048, max=0.288241, n=23669, distance: RMSE=1.041918, max=2.381856, n=23669
+[INFO] [1790518741.011839177] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028913, max=0.307606, n=23813
+[INFO] [1790518741.012206969] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.907383, max=2.372020, n=23813, y: RMSE=0.513333, max=1.573579, n=23813, z: RMSE=0.045025, max=0.288241, n=23813, distance: RMSE=1.043495, max=2.381856, n=23813
+[INFO] [1790518746.011664679] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028920, max=0.307606, n=23959
+[INFO] [1790518746.012142679] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.905314, max=2.372020, n=23959, y: RMSE=0.519226, max=1.573579, n=23959, z: RMSE=0.045026, max=0.288241, n=23959, distance: RMSE=1.044613, max=2.381856, n=23959
+[INFO] [1790518751.014372251] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028929, max=0.307606, n=24103
+[INFO] [1790518751.014944709] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.903278, max=2.372020, n=24103, y: RMSE=0.524736, max=1.573579, n=24103, z: RMSE=0.045040, max=0.288241, n=24103, distance: RMSE=1.045604, max=2.381856, n=24103
+[INFO] [1790518756.011465670] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028892, max=0.307606, n=24249
+[INFO] [1790518756.012007628] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.901243, max=2.372020, n=24249, y: RMSE=0.530211, max=1.573579, n=24249, z: RMSE=0.045037, max=0.288241, n=24249, distance: RMSE=1.046609, max=2.381856, n=24249
+[INFO] [1790518761.010414214] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028998, max=0.307606, n=24395
+[INFO] [1790518761.011066839] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.898940, max=2.372020, n=24395, y: RMSE=0.532634, max=1.573579, n=24395, z: RMSE=0.044963, max=0.288241, n=24395, distance: RMSE=1.045855, max=2.381856, n=24395
+[INFO] [1790518766.011455216] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029104, max=0.307606, n=24543
+[INFO] [1790518766.012118216] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.896302, max=2.372020, n=24543, y: RMSE=0.531787, max=1.573579, n=24543, z: RMSE=0.044836, max=0.288241, n=24543, distance: RMSE=1.043151, max=2.381856, n=24543
+[INFO] [1790518771.011470969] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029016, max=0.307606, n=24693
+[INFO] [1790518771.011965677] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.893735, max=2.372020, n=24693, y: RMSE=0.531747, max=1.573579, n=24693, z: RMSE=0.044718, max=0.288241, n=24693, distance: RMSE=1.040921, max=2.381856, n=24693
+[INFO] [1790518776.011766013] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028928, max=0.307606, n=24843
+[INFO] [1790518776.012342054] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.891191, max=2.372020, n=24843, y: RMSE=0.531696, max=1.573579, n=24843, z: RMSE=0.044602, max=0.288241, n=24843, distance: RMSE=1.038706, max=2.381856, n=24843
+[INFO] [1790518781.011063542] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028840, max=0.307606, n=24995
+[INFO] [1790518781.011576834] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.888636, max=2.372020, n=24995, y: RMSE=0.531642, max=1.573579, n=24995, z: RMSE=0.044485, max=0.288241, n=24995, distance: RMSE=1.036483, max=2.381856, n=24995
+[INFO] [1790518786.010248337] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028754, max=0.307606, n=25145
+[INFO] [1790518786.010691503] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.886155, max=2.372020, n=25144, y: RMSE=0.531588, max=1.573579, n=25144, z: RMSE=0.044371, max=0.288241, n=25144, distance: RMSE=1.034323, max=2.381856, n=25144
+[INFO] [1790518791.010535922] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028669, max=0.307606, n=25294
+[INFO] [1790518791.011114631] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.883679, max=2.372020, n=25294, y: RMSE=0.531533, max=1.573579, n=25294, z: RMSE=0.044257, max=0.288241, n=25294, distance: RMSE=1.032170, max=2.381856, n=25294
+[INFO] [1790518796.011615675] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028585, max=0.307606, n=25443
+[INFO] [1790518796.012126175] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.881242, max=2.372020, n=25443, y: RMSE=0.531481, max=1.573579, n=25443, z: RMSE=0.044146, max=0.288241, n=25443, distance: RMSE=1.030053, max=2.381856, n=25443
+[INFO] [1790518801.010153635] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.028501, max=0.307606, n=25594
+[INFO] [1790518801.010769469] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.878795, max=2.372020, n=25594, y: RMSE=0.531428, max=1.573579, n=25594, z: RMSE=0.044034, max=0.288241, n=25594, distance: RMSE=1.027927, max=2.381856, n=25594
+[INFO] [1790518806.010116929] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029606, max=0.307606, n=25743
+[INFO] [1790518806.010971429] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.876397, max=2.372020, n=25743, y: RMSE=0.531335, max=1.573579, n=25743, z: RMSE=0.043924, max=0.288241, n=25743, distance: RMSE=1.025826, max=2.381856, n=25743
+[INFO] [1790518811.010181251] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029581, max=0.307606, n=25891
+[INFO] [1790518811.010952126] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.874000, max=2.372020, n=25891, y: RMSE=0.530895, max=1.573579, n=25891, z: RMSE=0.043810, max=0.288241, n=25891, distance: RMSE=1.023545, max=2.381856, n=25891
+[INFO] [1790518816.011258337] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029600, max=0.307606, n=26041
+[INFO] [1790518816.011738753] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.871534, max=2.372020, n=26041, y: RMSE=0.529888, max=1.573579, n=26041, z: RMSE=0.043688, max=0.288241, n=26041, distance: RMSE=1.020912, max=2.381856, n=26041
+[INFO] [1790518821.010449464] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029576, max=0.307606, n=26191
+[INFO] [1790518821.010947547] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.869070, max=2.372020, n=26190, y: RMSE=0.528557, max=1.573579, n=26190, z: RMSE=0.043565, max=0.288241, n=26190, distance: RMSE=1.018112, max=2.381856, n=26190
+[INFO] [1790518826.010536050] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029544, max=0.307606, n=26338
+[INFO] [1790518826.011373716] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.866654, max=2.372020, n=26337, y: RMSE=0.527207, max=1.573579, n=26337, z: RMSE=0.043443, max=0.288241, n=26337, distance: RMSE=1.015344, max=2.381856, n=26337
+[INFO] [1790518831.011312094] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029529, max=0.307606, n=26487
+[INFO] [1790518831.011749677] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.864208, max=2.372020, n=26487, y: RMSE=0.525818, max=1.573579, n=26487, z: RMSE=0.043320, max=0.288241, n=26487, distance: RMSE=1.012530, max=2.381856, n=26487
+[INFO] [1790518836.011852054] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029549, max=0.307606, n=26633
+[INFO] [1790518836.012462888] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.861882, max=2.372020, n=26633, y: RMSE=0.524795, max=1.573579, n=26633, z: RMSE=0.043201, max=0.288241, n=26633, distance: RMSE=1.010008, max=2.381856, n=26633
+[INFO] [1790518841.010666876] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029465, max=0.307606, n=26785
+[INFO] [1790518841.011154001] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.859541, max=2.372020, n=26785, y: RMSE=0.524291, max=1.573579, n=26785, z: RMSE=0.043079, max=0.288241, n=26785, distance: RMSE=1.007744, max=2.381856, n=26785
+[INFO] [1790518846.014197920] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029384, max=0.307606, n=26933
+[INFO] [1790518846.014948587] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.857290, max=2.372020, n=26933, y: RMSE=0.523883, max=1.573579, n=26933, z: RMSE=0.042960, max=0.288241, n=26933, distance: RMSE=1.005606, max=2.381856, n=26933
+[INFO] [1790518851.012201172] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029303, max=0.307606, n=27083
+[INFO] [1790518851.012696381] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.855029, max=2.372020, n=27083, y: RMSE=0.523490, max=1.573579, n=27083, z: RMSE=0.042842, max=0.288241, n=27083, distance: RMSE=1.003470, max=2.381856, n=27083
+[INFO] [1790518856.010781175] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029221, max=0.307606, n=27234
+[INFO] [1790518856.011289550] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.852770, max=2.372020, n=27234, y: RMSE=0.523083, max=1.573579, n=27234, z: RMSE=0.042723, max=0.288241, n=27234, distance: RMSE=1.001328, max=2.381856, n=27234
+[INFO] [1790518861.011192719] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029427, max=0.307606, n=27384
+[INFO] [1790518861.011725260] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.850543, max=2.372020, n=27384, y: RMSE=0.522666, max=1.573579, n=27384, z: RMSE=0.042606, max=0.288241, n=27384, distance: RMSE=0.999209, max=2.381856, n=27384
+[INFO] [1790518866.010326138] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029501, max=0.307606, n=27532
+[INFO] [1790518866.010868929] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.848335, max=2.372020, n=27532, y: RMSE=0.522009, max=1.573579, n=27532, z: RMSE=0.042492, max=0.288241, n=27532, distance: RMSE=0.996981, max=2.381856, n=27532
+[INFO] [1790518871.011255334] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029614, max=0.307606, n=27684
+[INFO] [1790518871.013761751] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.846032, max=2.372020, n=27684, y: RMSE=0.520843, max=1.573579, n=27684, z: RMSE=0.042375, max=0.288241, n=27684, distance: RMSE=0.994406, max=2.381856, n=27684
+[INFO] [1790518876.010251253] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029677, max=0.307606, n=27834
+[INFO] [1790518876.010698128] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.843761, max=2.372020, n=27834, y: RMSE=0.519544, max=1.573579, n=27834, z: RMSE=0.042261, max=0.288241, n=27834, distance: RMSE=0.991788, max=2.381856, n=27834
+[INFO] [1790518881.010327297] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029867, max=0.307606, n=27982
+[INFO] [1790518881.010734256] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.841530, max=2.372020, n=27982, y: RMSE=0.518199, max=1.573579, n=27982, z: RMSE=0.042149, max=0.288241, n=27982, distance: RMSE=0.989181, max=2.381856, n=27982
+[INFO] [1790518886.010787425] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029905, max=0.307606, n=28133
+[INFO] [1790518886.011383925] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.839274, max=2.372020, n=28133, y: RMSE=0.516822, max=1.573579, n=28133, z: RMSE=0.042035, max=0.288241, n=28133, distance: RMSE=0.986535, max=2.381856, n=28133
+[INFO] [1790518891.010980802] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029926, max=0.307606, n=28282
+[INFO] [1790518891.011538927] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.837090, max=2.372020, n=28282, y: RMSE=0.515493, max=1.573579, n=28282, z: RMSE=0.041925, max=0.288241, n=28282, distance: RMSE=0.983977, max=2.381856, n=28282
+[INFO] [1790518896.010215888] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029930, max=0.307606, n=28431
+[INFO] [1790518896.011151846] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.835196, max=2.372020, n=28431, y: RMSE=0.514287, max=1.573579, n=28431, z: RMSE=0.041815, max=0.288241, n=28431, distance: RMSE=0.981729, max=2.381856, n=28431
+[INFO] [1790518901.010552376] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029892, max=0.307606, n=28581
+[INFO] [1790518901.010892417] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.833287, max=2.372020, n=28581, y: RMSE=0.512990, max=1.573579, n=28581, z: RMSE=0.041705, max=0.288241, n=28581, distance: RMSE=0.979420, max=2.381856, n=28581
+[INFO] [1790518906.012660378] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029963, max=0.307606, n=28728
+[INFO] [1790518906.013112128] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.831203, max=2.372020, n=28728, y: RMSE=0.511677, max=1.573579, n=28728, z: RMSE=0.041598, max=0.288241, n=28728, distance: RMSE=0.976955, max=2.381856, n=28728
+[INFO] [1790518911.011345756] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029941, max=0.307606, n=28877
+[INFO] [1790518911.011806131] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.829133, max=2.372020, n=28877, y: RMSE=0.510357, max=1.573579, n=28877, z: RMSE=0.041491, max=0.288241, n=28877, distance: RMSE=0.974498, max=2.381856, n=28877
+[INFO] [1790518916.013838550] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029888, max=0.307606, n=29027
+[INFO] [1790518916.014395633] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.827011, max=2.372020, n=29027, y: RMSE=0.509037, max=1.573579, n=29027, z: RMSE=0.041383, max=0.288241, n=29027, distance: RMSE=0.971997, max=2.381856, n=29027
+[INFO] [1790518921.010174010] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029845, max=0.307606, n=29176
+[INFO] [1790518921.010871219] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.824924, max=2.372020, n=29176, y: RMSE=0.507736, max=1.573579, n=29176, z: RMSE=0.041278, max=0.288241, n=29176, distance: RMSE=0.969536, max=2.381856, n=29176
+[INFO] [1790518926.010881138] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029894, max=0.307606, n=29326
+[INFO] [1790518926.011335054] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.823042, max=2.372020, n=29326, y: RMSE=0.506441, max=1.573579, n=29326, z: RMSE=0.041172, max=0.288241, n=29326, distance: RMSE=0.967252, max=2.381856, n=29326
+[INFO] [1790518931.011512167] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029818, max=0.307606, n=29476
+[INFO] [1790518931.012630917] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.821378, max=2.372020, n=29476, y: RMSE=0.505160, max=1.573579, n=29476, z: RMSE=0.041067, max=0.288241, n=29476, distance: RMSE=0.965161, max=2.381856, n=29476
+[INFO] [1790518936.011301503] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029743, max=0.307606, n=29626
+[INFO] [1790518936.011735462] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.819769, max=2.372020, n=29626, y: RMSE=0.503890, max=1.573579, n=29626, z: RMSE=0.040964, max=0.288241, n=29626, distance: RMSE=0.963123, max=2.381856, n=29626
+[INFO] [1790518941.011245714] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029668, max=0.307606, n=29776
+[INFO] [1790518941.011719047] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.818209, max=2.372020, n=29776, y: RMSE=0.502630, max=1.573579, n=29776, z: RMSE=0.040861, max=0.288241, n=29776, distance: RMSE=0.961131, max=2.381856, n=29776
+[INFO] [1790518946.011668300] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029593, max=0.307606, n=29926
+[INFO] [1790518946.012159883] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.816659, max=2.372020, n=29926, y: RMSE=0.501380, max=1.573579, n=29926, z: RMSE=0.040759, max=0.288241, n=29926, distance: RMSE=0.959153, max=2.381856, n=29926
+[INFO] [1790518951.010843177] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029614, max=0.307606, n=30076
+[INFO] [1790518951.011302052] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.814965, max=2.372020, n=30076, y: RMSE=0.500135, max=1.573579, n=30076, z: RMSE=0.040657, max=0.288241, n=30076, distance: RMSE=0.957056, max=2.381856, n=30076
+[INFO] [1790518956.012017179] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029540, max=0.307606, n=30226
+[INFO] [1790518956.012483221] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.813090, max=2.372020, n=30226, y: RMSE=0.498896, max=1.573579, n=30226, z: RMSE=0.040556, max=0.288241, n=30226, distance: RMSE=0.954808, max=2.381856, n=30226
+[INFO] [1790518961.011280834] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029467, max=0.307606, n=30376
+[INFO] [1790518961.011701876] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.811181, max=2.372020, n=30376, y: RMSE=0.497665, max=1.573579, n=30376, z: RMSE=0.040456, max=0.288241, n=30376, distance: RMSE=0.952534, max=2.381856, n=30376
+[INFO] [1790518966.011167170] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029395, max=0.307606, n=30526
+[INFO] [1790518966.011677170] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.809285, max=2.372020, n=30526, y: RMSE=0.496443, max=1.573579, n=30526, z: RMSE=0.040357, max=0.288241, n=30526, distance: RMSE=0.950277, max=2.381856, n=30526
+[INFO] [1790518971.011233131] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029323, max=0.307606, n=30676
+[INFO] [1790518971.011623214] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.807416, max=2.372020, n=30676, y: RMSE=0.495230, max=1.573579, n=30676, z: RMSE=0.040258, max=0.288241, n=30676, distance: RMSE=0.948047, max=2.381856, n=30676
+[INFO] [1790518976.013205633] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029252, max=0.307606, n=30825
+[INFO] [1790518976.013690050] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.805572, max=2.372020, n=30825, y: RMSE=0.494034, max=1.573579, n=30825, z: RMSE=0.040161, max=0.288241, n=30825, distance: RMSE=0.945848, max=2.381856, n=30825
+[INFO] [1790518981.012205510] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029181, max=0.307606, n=30975
+[INFO] [1790518981.012625885] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.803733, max=2.372020, n=30975, y: RMSE=0.492839, max=1.573579, n=30975, z: RMSE=0.040064, max=0.288241, n=30975, distance: RMSE=0.943654, max=2.381856, n=30975
+[INFO] [1790518986.012378138] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029114, max=0.307606, n=31124
+[INFO] [1790518986.012856221] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.801924, max=2.372020, n=31124, y: RMSE=0.491660, max=1.573579, n=31124, z: RMSE=0.039968, max=0.288241, n=31124, distance: RMSE=0.941494, max=2.381856, n=31124
+[INFO] [1790518991.010813001] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029154, max=0.307606, n=31274
+[INFO] [1790518991.011299334] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.800131, max=2.372020, n=31274, y: RMSE=0.490483, max=1.573579, n=31274, z: RMSE=0.039872, max=0.288241, n=31274, distance: RMSE=0.939347, max=2.381856, n=31274
+[INFO] [1790518996.010802920] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029247, max=0.307606, n=31423
+[INFO] [1790518996.011226087] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.798251, max=2.372020, n=31423, y: RMSE=0.489319, max=1.573579, n=31423, z: RMSE=0.039777, max=0.288241, n=31423, distance: RMSE=0.937134, max=2.381856, n=31423
+[INFO] [1790519001.010527756] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029394, max=0.307606, n=31572
+[INFO] [1790519001.011071631] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.796418, max=2.372020, n=31572, y: RMSE=0.488164, max=1.573579, n=31572, z: RMSE=0.039684, max=0.288241, n=31572, distance: RMSE=0.934966, max=2.381856, n=31572
+[INFO] [1790519006.010636466] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029502, max=0.307606, n=31722
+[INFO] [1790519006.011098633] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.794695, max=2.372020, n=31722, y: RMSE=0.487013, max=1.573579, n=31722, z: RMSE=0.039590, max=0.288241, n=31722, distance: RMSE=0.932893, max=2.381856, n=31722
+[INFO] [1790519011.013301844] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.030145, max=0.307606, n=31870
+[INFO] [1790519011.013780635] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.793025, max=2.372020, n=31870, y: RMSE=0.485885, max=1.573579, n=31870, z: RMSE=0.039498, max=0.288241, n=31870, distance: RMSE=0.930877, max=2.381856, n=31870
+[INFO] [1790519016.011717888] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.030170, max=0.307606, n=32020
+[INFO] [1790519016.012162888] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.791198, max=2.372020, n=32020, y: RMSE=0.484746, max=1.573579, n=32020, z: RMSE=0.039406, max=0.288241, n=32020, distance: RMSE=0.928723, max=2.381856, n=32020
+[INFO] [1790519021.013896626] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.030129, max=0.307606, n=32170
+[INFO] [1790519021.014341459] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.789372, max=2.372020, n=32170, y: RMSE=0.483614, max=1.573579, n=32170, z: RMSE=0.039314, max=0.288241, n=32170, distance: RMSE=0.926572, max=2.381856, n=32170
+[INFO] [1790519026.013400462] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.030086, max=0.307606, n=32320
+[INFO] [1790519026.013932378] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.787566, max=2.372020, n=32320, y: RMSE=0.482493, max=1.573579, n=32320, z: RMSE=0.039223, max=0.288241, n=32320, distance: RMSE=0.924445, max=2.381856, n=32320
+[INFO] [1790519031.012515131] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.030033, max=0.307606, n=32470
+[INFO] [1790519031.012997506] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.785868, max=2.372020, n=32470, y: RMSE=0.481405, max=1.573579, n=32470, z: RMSE=0.039132, max=0.288241, n=32470, distance: RMSE=0.922426, max=2.381856, n=32470
+[INFO] [1790519036.012065008] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029998, max=0.307606, n=32619
+[INFO] [1790519036.012560883] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.784274, max=2.372020, n=32619, y: RMSE=0.480358, max=1.573579, n=32619, z: RMSE=0.039044, max=0.288241, n=32619, distance: RMSE=0.920518, max=2.381856, n=32619
+[INFO] [1790519041.012609260] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029956, max=0.307606, n=32769
+[INFO] [1790519041.013107469] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.782533, max=2.372020, n=32769, y: RMSE=0.479272, max=1.573579, n=32769, z: RMSE=0.038954, max=0.288241, n=32769, distance: RMSE=0.918465, max=2.381856, n=32769
+[INFO] [1790519046.012391679] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029920, max=0.307606, n=32919
+[INFO] [1790519046.013113721] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.780901, max=2.372020, n=32919, y: RMSE=0.478221, max=1.573579, n=32919, z: RMSE=0.038866, max=0.288241, n=32919, distance: RMSE=0.916522, max=2.381856, n=32919
+[INFO] [1790519051.011151001] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029852, max=0.307606, n=33069
+[INFO] [1790519051.011587001] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.779402, max=2.372020, n=33069, y: RMSE=0.477211, max=1.573579, n=33069, z: RMSE=0.038777, max=0.288241, n=33069, distance: RMSE=0.914713, max=2.381856, n=33069
+[INFO] [1790519056.013641337] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029784, max=0.307606, n=33219
+[INFO] [1790519056.014082087] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.777920, max=2.372020, n=33219, y: RMSE=0.476209, max=1.573579, n=33219, z: RMSE=0.038690, max=0.288241, n=33219, distance: RMSE=0.912924, max=2.381856, n=33219
+[INFO] [1790519061.010745964] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029717, max=0.307606, n=33369
+[INFO] [1790519061.011202756] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.776361, max=2.372020, n=33369, y: RMSE=0.475190, max=1.573579, n=33369, z: RMSE=0.038603, max=0.288241, n=33369, distance: RMSE=0.911061, max=2.381856, n=33369
+[INFO] [1790519066.013431716] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029784, max=0.307606, n=33519
+[INFO] [1790519066.013827091] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.774794, max=2.372020, n=33519, y: RMSE=0.474173, max=1.573579, n=33519, z: RMSE=0.038516, max=0.288241, n=33519, distance: RMSE=0.909191, max=2.381856, n=33519
+[INFO] [1790519071.015485635] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029822, max=0.307606, n=33667
+[INFO] [1790519071.015959094] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.773251, max=2.372020, n=33667, y: RMSE=0.473174, max=1.573579, n=33667, z: RMSE=0.038431, max=0.288241, n=33667, distance: RMSE=0.907352, max=2.381856, n=33667
+[INFO] [1790519076.011495804] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029894, max=0.307606, n=33816
+[INFO] [1790519076.011892429] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.771608, max=2.372020, n=33816, y: RMSE=0.472147, max=1.573579, n=33816, z: RMSE=0.038347, max=0.288241, n=33816, distance: RMSE=0.905413, max=2.381856, n=33816
+[INFO] [1790519081.011523834] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029986, max=0.307606, n=33965
+[INFO] [1790519081.011986542] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.769940, max=2.372020, n=33965, y: RMSE=0.471117, max=1.573579, n=33965, z: RMSE=0.038263, max=0.288241, n=33965, distance: RMSE=0.903450, max=2.381856, n=33965
+[INFO] [1790519086.011476212] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029948, max=0.307606, n=34114
+[INFO] [1790519086.011866712] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.768348, max=2.372020, n=34114, y: RMSE=0.470111, max=1.573579, n=34114, z: RMSE=0.038179, max=0.288241, n=34114, distance: RMSE=0.901566, max=2.381856, n=34114
+[INFO] [1790519091.012560672] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029904, max=0.307606, n=34264
+[INFO] [1790519091.012979047] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.766787, max=2.372020, n=34264, y: RMSE=0.469114, max=1.573579, n=34264, z: RMSE=0.038095, max=0.288241, n=34264, distance: RMSE=0.899712, max=2.381856, n=34264
+[INFO] [1790519096.012739050] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029941, max=0.307606, n=34412
+[INFO] [1790519096.013191800] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.765199, max=2.372020, n=34412, y: RMSE=0.468121, max=1.573579, n=34412, z: RMSE=0.038014, max=0.288241, n=34412, distance: RMSE=0.897837, max=2.381856, n=34412
+[INFO] [1790519101.013951135] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029941, max=0.307606, n=34562
+[INFO] [1790519101.015039094] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.763552, max=2.372020, n=34562, y: RMSE=0.467108, max=1.573579, n=34562, z: RMSE=0.037931, max=0.288241, n=34562, distance: RMSE=0.895902, max=2.381856, n=34562
+[INFO] [1790519106.011976096] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029876, max=0.307606, n=34712
+[INFO] [1790519106.012509179] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.761947, max=2.372020, n=34712, y: RMSE=0.466110, max=1.573579, n=34712, z: RMSE=0.037849, max=0.288241, n=34712, distance: RMSE=0.894010, max=2.381856, n=34712
+[INFO] [1790519111.011561959] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029812, max=0.307606, n=34862
+[INFO] [1790519111.012568584] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.760373, max=2.372020, n=34862, y: RMSE=0.465125, max=1.573579, n=34862, z: RMSE=0.037767, max=0.288241, n=34862, distance: RMSE=0.892152, max=2.381856, n=34862
+[INFO] [1790519116.014209962] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029748, max=0.307606, n=35012
+[INFO] [1790519116.015146878] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.758815, max=2.372020, n=35012, y: RMSE=0.464148, max=1.573579, n=35012, z: RMSE=0.037687, max=0.288241, n=35012, distance: RMSE=0.890311, max=2.381856, n=35012
+[INFO] [1790519121.014693589] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029688, max=0.307606, n=35162
+[INFO] [1790519121.015843756] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.757258, max=2.372020, n=35162, y: RMSE=0.463175, max=1.573579, n=35162, z: RMSE=0.037606, max=0.288241, n=35162, distance: RMSE=0.888473, max=2.381856, n=35162
+[INFO] [1790519126.011359050] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029632, max=0.307606, n=35312
+[INFO] [1790519126.012117925] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.755710, max=2.372020, n=35312, y: RMSE=0.462207, max=1.573579, n=35312, z: RMSE=0.037526, max=0.288241, n=35312, distance: RMSE=0.886646, max=2.381856, n=35312
+[INFO] [1790519131.014801427] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029636, max=0.307606, n=35461
+[INFO] [1790519131.019441760] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.754181, max=2.372020, n=35461, y: RMSE=0.461251, max=1.573579, n=35461, z: RMSE=0.037447, max=0.288241, n=35461, distance: RMSE=0.884841, max=2.381856, n=35461
+[INFO] [1790519136.013486763] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029934, max=0.308957, n=35609
+[INFO] [1790519136.014662721] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.752701, max=2.372020, n=35609, y: RMSE=0.460317, max=1.573579, n=35609, z: RMSE=0.037370, max=0.288241, n=35609, distance: RMSE=0.883089, max=2.381856, n=35609
+[INFO] [1790519141.011792334] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029932, max=0.308957, n=35759
+[INFO] [1790519141.012367876] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.751136, max=2.372020, n=35759, y: RMSE=0.459354, max=1.573579, n=35759, z: RMSE=0.037291, max=0.288241, n=35759, distance: RMSE=0.881250, max=2.381856, n=35759
+[INFO] [1790519146.011848878] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029896, max=0.308957, n=35909
+[INFO] [1790519146.012450212] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.749615, max=2.372020, n=35909, y: RMSE=0.458407, max=1.573579, n=35909, z: RMSE=0.037213, max=0.288241, n=35909, distance: RMSE=0.879456, max=2.381856, n=35909
+[INFO] [1790519151.010323131] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029865, max=0.308957, n=36058
+[INFO] [1790519151.010760089] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.748080, max=2.372020, n=36058, y: RMSE=0.457463, max=1.573579, n=36058, z: RMSE=0.037136, max=0.288241, n=36058, distance: RMSE=0.877653, max=2.381856, n=36058
+[INFO] [1790519156.011221300] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.029840, max=0.308957, n=36208
+[INFO] [1790519156.011882383] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.746555, max=2.372020, n=36208, y: RMSE=0.456525, max=1.573579, n=36208, z: RMSE=0.037232, max=0.288241, n=36208, distance: RMSE=0.875869, max=2.381856, n=36208
+[INFO] [1790519161.012196719] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.030085, max=0.308957, n=36358
+[INFO] [1790519161.012792594] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.745040, max=2.372020, n=36358, y: RMSE=0.455586, max=1.573579, n=36358, z: RMSE=0.037236, max=0.288241, n=36358, distance: RMSE=0.874088, max=2.381856, n=36358
+[INFO] [1790519166.011414804] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.030033, max=0.308957, n=36508
+[INFO] [1790519166.012045679] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.743512, max=2.372020, n=36508, y: RMSE=0.454652, max=1.573579, n=36508, z: RMSE=0.037185, max=0.288241, n=36508, distance: RMSE=0.872297, max=2.381856, n=36508
+[INFO] [1790519171.011228251] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.030099, max=0.308957, n=36658
+[INFO] [1790519171.012309459] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.741994, max=2.372020, n=36658, y: RMSE=0.453724, max=1.573579, n=36658, z: RMSE=0.037136, max=0.288241, n=36658, distance: RMSE=0.870516, max=2.381856, n=36658
+[INFO] [1790519176.011220920] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.030111, max=0.308957, n=36808
+[INFO] [1790519176.011937795] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.740591, max=2.372020, n=36808, y: RMSE=0.452833, max=1.573579, n=36808, z: RMSE=0.037080, max=0.288241, n=36808, distance: RMSE=0.868854, max=2.381856, n=36808
+[INFO] [1790519181.011959006] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.030094, max=0.308957, n=36958
+[INFO] [1790519181.012598589] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.739861, max=2.372020, n=36958, y: RMSE=0.452297, max=1.573579, n=36958, z: RMSE=0.037008, max=0.288241, n=36958, distance: RMSE=0.867950, max=2.381856, n=36958
+[INFO] [1790519186.012343383] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.030502, max=0.308957, n=37108
+[INFO] [1790519186.013377925] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.739894, max=2.372020, n=37108, y: RMSE=0.452679, max=1.573579, n=37108, z: RMSE=0.036952, max=0.288241, n=37108, distance: RMSE=0.868174, max=2.381856, n=37108
+[INFO] [1790519191.012382094] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.031287, max=0.308957, n=37256
+[INFO] [1790519191.013561219] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.739873, max=2.372020, n=37256, y: RMSE=0.453301, max=1.573579, n=37256, z: RMSE=0.036910, max=0.288241, n=37256, distance: RMSE=0.868479, max=2.381856, n=37256
+[INFO] [1790519196.012407346] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.031690, max=0.308957, n=37404
+[INFO] [1790519196.013525346] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.739083, max=2.372020, n=37404, y: RMSE=0.460807, max=2.157846, n=37404, z: RMSE=0.036849, max=0.288241, n=37404, distance: RMSE=0.871748, max=2.381856, n=37404
+[INFO] [1790519201.012290917] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.032301, max=0.308957, n=37554
+[INFO] [1790519201.012871459] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.766920, max=5.214808, n=37554, y: RMSE=0.504196, max=4.772997, n=37554, z: RMSE=0.036819, max=0.288241, n=37554, distance: RMSE=0.918551, max=7.069357, n=37554
+[INFO] [1790519206.010787128] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.032329, max=0.308957, n=37704
+[INFO] [1790519206.012152795] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.913925, max=11.055581, n=37704, y: RMSE=0.648505, max=8.637580, n=37704, z: RMSE=0.036832, max=0.288241, n=37704, distance: RMSE=1.121238, max=14.029992, n=37704
+[INFO] [1790519211.011697922] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.032302, max=0.308957, n=37854
+[INFO] [1790519211.012179214] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.912313, max=11.055581, n=37854, y: RMSE=0.647921, max=8.637580, n=37854, z: RMSE=0.036967, max=0.288241, n=37854, distance: RMSE=1.119591, max=14.029992, n=37854
+[INFO] [1790519216.012364383] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.032261, max=0.308957, n=38004
+[INFO] [1790519216.013684258] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.911011, max=11.055581, n=38004, y: RMSE=0.647578, max=8.637580, n=38004, z: RMSE=0.037247, max=0.288241, n=38004, distance: RMSE=1.118340, max=14.029992, n=38004
+[INFO] [1790519221.011017510] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.032272, max=0.308957, n=38153
+[INFO] [1790519221.011521135] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.910474, max=11.055581, n=38153, y: RMSE=0.647427, max=8.637580, n=38153, z: RMSE=0.037469, max=0.288241, n=38153, distance: RMSE=1.117823, max=14.029992, n=38153
+[INFO] [1790519226.011436888] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.032253, max=0.308957, n=38302
+[INFO] [1790519226.011886596] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.910001, max=11.055581, n=38302, y: RMSE=0.647007, max=8.637580, n=38302, z: RMSE=0.037472, max=0.288241, n=38302, distance: RMSE=1.117195, max=14.029992, n=38302
+[INFO] [1790519231.020707709] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.032197, max=0.308957, n=38435
+[INFO] [1790519231.021261792] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.909358, max=11.055581, n=38435, y: RMSE=0.646461, max=8.637580, n=38435, z: RMSE=0.037474, max=0.288241, n=38435, distance: RMSE=1.116355, max=14.029992, n=38435
+[INFO] [1790519233.919220044] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.032197, max=0.308957, n=38435
+Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[INFO] [1790519233.919681961] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.909358, max=11.055581, n=38435, y: RMSE=0.646461, max=8.637580, n=38435, z: RMSE=0.037474, max=0.288241, n=38435, distance: RMSE=1.116355, max=14.029992, n=38435
+Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:389

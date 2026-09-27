@@ -1,0 +1,35 @@
+{
+ "source": "shutdown report (printed after SIGINT)",
+ "periodic_reports": 263,
+ "velocity_line": "[INFO] [1790519233.919220044] [hackathon_solution_checker]: Velocity metrics [m/s]: velocity: RMSE=0.032197, max=0.308957, n=38435",
+ "position_line": "[INFO] [1790519233.919681961] [hackathon_solution_checker]: Position metrics [m]: x: RMSE=0.909358, max=11.055581, n=38435, y: RMSE=0.646461, max=8.637580, n=38435, z: RMSE=0.037474, max=0.288241, n=38435, distance: RMSE=1.116355, max=14.029992, n=38435",
+ "velocity": {
+  "velocity": {
+   "rmse": 0.032197,
+   "max": 0.308957,
+   "n": 38435
+  }
+ },
+ "position": {
+  "x": {
+   "rmse": 0.909358,
+   "max": 11.055581,
+   "n": 38435
+  },
+  "y": {
+   "rmse": 0.646461,
+   "max": 8.63758,
+   "n": 38435
+  },
+  "z": {
+   "rmse": 0.037474,
+   "max": 0.288241,
+   "n": 38435
+  },
+  "distance": {
+   "rmse": 1.116355,
+   "max": 14.029992,
+   "n": 38435
+  }
+ }
+}

@@ -1,0 +1,9 @@
+latency_probe: 4843 input messages
+  /result/velocity n=3672 matched=3672 unmatched=0 duplicate-stamps=25 | rate wall 31.00 Hz, stamp 30.08 Hz | 0.1s-grid coverage 100.00% | frame_id base_link
+      latency ms, all:          p50 0.82 p95 1.79 p99 46.82 max 58.90
+      latency ms, after 2 s:   p50 0.81 p95 1.31 p99 1.88 max 4.36 (n=3481)
+      vs first input w/ stamp:  p50 0.89 p95 1.81 max 69.24
+  /result/position n=3669 matched=3669 unmatched=0 duplicate-stamps=24 | rate wall 30.98 Hz, stamp 30.08 Hz | 0.1s-grid coverage 100.00% | frame_id map
+      latency ms, all:          p50 1.54 p95 2.57 p99 46.89 max 59.06
+      latency ms, after 2 s:   p50 1.53 p95 2.17 p99 2.71 max 4.92 (n=3480)
+      vs first input w/ stamp:  p50 1.64 p95 2.60 max 69.33

@@ -1,0 +1,5 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1790437640.266528051] [rosbag2_storage]: Opened database '/data/bag/30618_0e41eac3_0.db3' for READ_ONLY.
+[INFO] [1790437640.267047468] [rosbag2_player]: Set rate to 1
+[INFO] [1790437640.275756968] [rosbag2_player]: Sleep 1000000000 ns
+[INFO] [1790437641.287145593] [rosbag2_storage]: Opened database '/data/bag/30618_0e41eac3_0.db3' for READ_ONLY.
+[INFO] [1790437759.798256968] [rclcpp]: signal_handler(SIGINT/SIGTERM)

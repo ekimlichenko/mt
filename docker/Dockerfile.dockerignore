@@ -1,0 +1,11 @@
+# Build context filter for docker/Dockerfile (BuildKit reads <Dockerfile>.dockerignore).
+# Lets a plain `docker build -f docker/Dockerfile .` from the solution root send only what
+# the image needs; without it the context includes .work/ (several GB of caches and runs).
+*
+!src
+!tools
+!docker
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.DS_Store
